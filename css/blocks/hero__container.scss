@@ -1,0 +1,106 @@
+.hero__container{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 950px;
+	justify-content: space-between;
+}
+.header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 70px;
+	margin-top: 2vh;
+}
+.sidebar{
+	text-align: center;
+    display: inline;
+    text-decoration: none;
+}
+.sidebar__container{
+	display: flex;
+	list-style: none;
+}
+.sidebar__elem{
+	display: flex;
+	align-items: center;
+	padding: 7px;
+}
+a{
+	text-decoration: none;
+	color: #ffffff;
+}
+.sidebar__elem_txt{
+	color: #ffffff;
+	font-family: Ubuntu;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+.circle{
+  display: flex;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+	font-family: Ubuntu;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 30px;
+	text-transform: uppercase;
+	width: 97px;
+	height: 35px;
+	border-radius: 5px;
+	background-color: #e45028;
+}
+.hero__content{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+}
+.hero__arrow{
+	display: flex;
+	width: 100%;
+	height: auto;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 6.4vh;
+}
+.content__txt li{
+	list-style-type: none;
+}
+.content__img{
+	margin-bottom: 6%;
+}
+.content__txt1{
+	color: #f9b43b;
+	font-family: Gagalin;
+	font-size: 72px;
+	font-weight: 400;
+	line-height: 85px;
+}
+.content__txt2{
+	color: #ffffff;
+	font-family: Lifehack;
+	font-weight: 500;
+	font-size: 65px;
+	letter-spacing: -1.63px;
+	line-height: 85px;
+}
+.content__txt3{
+	color: #ffffff;
+	font-family: Lifehack;
+	font-weight: 500;
+	font-size: 65px;
+	letter-spacing: -1.63px;
+	line-height: 60px;
+}
