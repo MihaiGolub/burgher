@@ -1,0 +1,129 @@
+.map__footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/map.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 60px;
+  background-image: url(../img/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 950px;
+  height: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-repeat: no-repeat; }
+
+.footer__contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.footer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.contacts__adress {
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px; }
+
+.contacts__telefon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-position: -5px -35px; }
+
+.sprite-phone {
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+  width: 12px;
+  height: 11px;
+  background-position: -5px -35px; }
+
+.contacts__number {
+  font-family: Ubuntu;
+  font-size: 14px;
+  color: #e45028;
+  margin-left: 7px;
+  font-weight: 700; }
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.sprite-vk {
+  background-image: url(../img/spritesheet.png);
+  width: 23px;
+  height: 13px;
+  background-position: -65px -5px;
+  margin-right: 20px; }
+
+.sprite-fb {
+  background-image: url(../img/spritesheet.png);
+  width: 20px;
+  height: 20px;
+  background-position: -5px -5px;
+  margin-right: 20px; }
+
+.sprite-inst {
+  background-image: url(../img/spritesheet.png);
+  width: 20px;
+  height: 20px;
+  background-position: -35px -5px;
+  margin-right: 20px; }
+
+.sprite-twitter {
+  background-image: url(../img/spritesheet.png);
+  width: 20px;
+  height: 16px;
+  background-position: -27px -35px; }

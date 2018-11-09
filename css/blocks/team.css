@@ -48,10 +48,26 @@
   background-color: #2f3234;
   opacity: 0.93; }
 
-.team__dscr {
+.accordeon__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+.team__dscr__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -62,10 +78,12 @@
   -ms-flex-align: start;
   align-items: flex-start;
   height: 60%;
-  width: 60%;
-  border: solid 1px #f9b43b; }
+  width: 60%; }
 
 .team__txt {
+  position: absolute;
+  left: 0;
+  top: 0;
   color: #f9b43b;
   font-family: Gagalin;
   font-size: 72px;
@@ -75,50 +93,117 @@
 .team__acordeon {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
-
-.acordeon__name-ppl {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  width: 100%;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
-.triagle-down__ppl {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 7px 4.5px 0 4.5px;
-  border-color: #f9b33b transparent transparent transparent; }
-
-.name__ppl {
-  color: #ffffff;
-  padding: 10px;
-  font-family: Gagalin;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 28.13px; }
-
-.acordeon__elem {
+.team__name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 100%;
+  height: auto; }
+
+.pre-name__triagle {
+  width: 0;
   height: 0;
-  border: solid 1px #c94314;
+  border-style: solid;
+  border-width: 0 4.5px 7px 4.5px;
+  border-color: transparent transparent #f9b33b transparent; }
+
+.team-name__txt {
+  padding: 5%;
+  color: #ffffff;
+  font-family: Gagalin;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28.13px; }
+
+.team__dscr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+  max-height: 0%;
+  height: 0px; }
+
+.team__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-size: auto;
   overflow: hidden; }
 
-.acordeon__name-pp:hover .acordeon__elem {
-  height: 26%;
-  overflow: visible; }
+.tm-img__circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  height: 100%;
+  margin: 0 auto; }
+
+.team__dscr-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 45%;
+  height: 100%;
+  padding: 20px;
+  margin-top: -22px; }
+
+.dscr-txt__function {
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 14px;
+  line-height: 24.01px;
+  font-weight: 700; }
+
+.dscr-txt__txt {
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24.01px; }
+
+.team__acordeon:hover .team__dscr {
+  max-height: 100%;
+  height: 100%; }
+
+.team__acordeon:hover .team-name__txt {
+  color: #f9b43b; }
+
+.team__acordeon:hover .pre-name__triagle {
+  border-width: 7px 4.5px 0 4.5px;
+  border-color: #f9b33b transparent transparent transparent; }

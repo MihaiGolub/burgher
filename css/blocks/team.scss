@@ -1,5 +1,5 @@
 .team__page{
-display: flex;
+	display: flex;
 	width: 100%;
 	height: 100vh;
 	align-items: center;
@@ -30,58 +30,121 @@ display: flex;
 	background-color: #2f3234;
 	opacity: 0.93;
 }
-.team__dscr{
+.accordeon__block{
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+
+.team__dscr__block{
+	display: flex;
+	position: relative;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: flex-start;
 	height: 60%;
 	width: 60%;
-	border: solid 1px #f9b43b; 
 }
 .team__txt{
+	position: absolute;
+	left: 0;
+	top: 0;
 	color: #f9b43b;
 	font-family: Gagalin;
 	font-size: 72px;
 	font-weight: 400;
 	line-height: 64.04px;
 }
+
 .team__acordeon{
 	display: flex;
-}
-.acordeon__name-ppl{
-	display: flex;
-	flex-direction: row;
+	width: 100%;
 	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
 }
-.triagle-down__ppl{
+.team__name{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	height: auto;
+}
+.pre-name__triagle{
 	width: 0;
 	height: 0;
 	border-style: solid;
-	border-width: 7px 4.5px 0 4.5px;
-	border-color: #f9b33b transparent transparent transparent;
-
+	border-width: 0 4.5px 7px 4.5px;
+	border-color: transparent transparent #f9b33b transparent;
 }
-
-.name__ppl{
+.team-name__txt{
+	padding: 5%;
 	color: #ffffff;
-	padding: 10px;
 	font-family: Gagalin;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 28.13px;
 }
-.acordeon__elem{
+.team__dscr{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	overflow: hidden;
+    max-height: 0%;
+	height: 0px;
+}
+.team__img{
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-	height: 0;
-	border: solid 1px #c94314;
+	justify-content: center;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-size: auto;
 	overflow: hidden;
 }
-
-.acordeon__name-pp:hover .acordeon__elem{
-	height: 26%;
-	overflow: visible;
+.tm-img__circle{
+	display: flex;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+}
+.team__dscr-txt{
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+	height: 100%;
+	padding: 20px;
+	margin-top: -22px;
+}
+.dscr-txt__function{
+	color: #ffffff;
+	font-family: Ubuntu;
+	font-size: 14px;
+	line-height: 24.01px;
+	font-weight: 700;
+}
+.dscr-txt__txt{
+	color: #ffffff;
+	font-family: Ubuntu;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24.01px;
+}	
+.team__acordeon:hover {
+	.team__dscr{
+		max-height: 100%;
+		height: 100%;
+	}
+	.team-name__txt{
+		color: #f9b43b;
+	}
+		.pre-name__triagle{
+		border-width: 7px 4.5px 0 4.5px;
+		border-color: #f9b33b transparent transparent transparent;
+	}
 }
