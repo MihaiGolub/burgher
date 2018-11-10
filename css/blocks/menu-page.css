@@ -12,9 +12,9 @@
 .menu__page .menu__title {
   color: #ffffff;
   font-family: Gagalin;
-  font-size: 72px;
+  font-size: 4.5rem;
   font-weight: 400;
-  line-height: 64px;
+  line-height: 4rem;
   margin-top: 10%;
   margin-left: 15%; }
 
@@ -43,7 +43,7 @@
 
 .accordeon-menu__btn {
   position: relative;
-  width: 80px;
+  width: 5rem;
   -webkit-box-flex: 1;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -62,9 +62,9 @@
   white-space: nowrap;
   color: #ffffff;
   font-family: Gagalin;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 400;
-  line-height: 63.75px;
+  line-height: 3.9375rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
@@ -73,7 +73,7 @@
 .accordeon-menu__content {
   background-color: #2f3234;
   opacity: 0.93;
-  max-width: 0px;
+  max-width: 0rem;
   -webkit-box-flex: 0;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
@@ -83,11 +83,11 @@
   transition: max-width 0.3s; }
 
 .accordeon-menu__txt {
-  padding: 30px;
-  width: 500px; }
+  padding: 1.875rem;
+  width: 31.25rem; }
 
 .accordeon-menu__elem:hover .accordeon-menu__content {
-  max-width: 500px; }
+  max-width: 31.25rem; }
 
 .accordeon-menu__elem:hover .accordeon-menu__btn-txt {
   color: #f9b43b; }

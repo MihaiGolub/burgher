@@ -1,15 +1,46 @@
+$tablets: 768px;
+$phones: 480px;
+
+@media (max-width: $tablets) {
+
+}
+
+@media (max-width: $phones) {
+
+}
+
+@mixin tablets {
+	@media (max-width: $tablets) {
+		@content;
+	}
+}
+@mixin phones {
+	@media (max-width: $phones) {
+		@content;
+	}
+}
+
 .people-page{
 	display: flex;
 	flex-wrap: wrap;
 	background-color: #000;
 	width: 100%;
 	height: 100vh;
+	@include tablets {
+	display: flex;
+    flex-direction: column;
 }
-.people_block1{
+}
+.people__elements{
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: inherit;
+	margin: 0;
+}
+.people__container{
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
-	background-image: url(../img/people_img1.jpg);
 	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,127 +48,31 @@
     filter: grayscale(100%) brightness(100%);
 	width: 25%;
 	height: 50%;
+	@include tablets{
+		width: 50%;
+	}
+	@include phones {
+	width: 100%;
 }
-.people_block2{
-	position: relative;
+}
+.people__content{
 	display: flex;
-	flex-wrap: wrap;
-	background-image: url(../img/people_img2.jpg);
-	background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    filter: grayscale(100%) brightness(100%);
-	width: 25%;
-	height: 50%;
-}
-.people_block3{
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	background-image: url(../img/people_img3.jpg);
-	background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    filter: grayscale(100%) brightness(100%);
-	width: 25%;
-	height: 50%;
-}
-.people_block4{
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	background-image: url(../img/people_img4.jpg);
-	background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    filter: grayscale(100%) brightness(100%);
-	width: 25%;
-	height: 50%;
-}
-.people_block5{
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	background-image: url(../img/people_img5.jpg);
-	background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    filter: grayscale(100%) brightness(100%);
-	width: 25%;
-	height: 50%;
-}
-.people_block6{
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	background-image: url(../img/people_img6.jpg);
-	background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    filter: grayscale(100%) brightness(100%);
-	width: 25%;
-	height: 50%;
-}
-.people_block7{
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	background-image: url(../img/people_img7.jpg);
-	background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    filter: grayscale(100%) brightness(100%);
-	width: 25%;
-	height: 50%;
-}
-.people_block8{
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	background-image: url(../img/people_img8.jpg);
-	background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    filter: grayscale(100%) brightness(100%);
-	width: 25%;
-	height: 50%;
-}
-.people_block1:hover {
-	filter: brightness(100%);
+	flex-direction: column;
+	margin-top: 15%;
+	margin-left: 7.2%;
+	align-items: flex-start;
+	width: 81%;
+	height: 70%;
+	justify-content: space-around;
+	opacity: 0;
 }
 
-.people_block2:hover {
+.people__container:hover{
 	filter: brightness(100%);
-}
-
-.people_block3:hover {
-	filter: brightness(100%);
-}
-
-.people_block4:hover {
-	filter: brightness(100%);
-}
-
-.people_block5:hover {
-	filter: brightness(100%);
-}
-
-.people_block6:hover {
-	filter: brightness(100%);
-}
-
-.people_block7:hover {
-	filter: brightness(100%);
-}
-.people_block8:hover {
-	filter: brightness(100%);
+	.people__content{
+	opacity: 1;
+	transition-duration: 1s;
+	}
 }
 
 
@@ -153,35 +88,42 @@
 	left: 6%;
 	opacity: 0;
 }
-.people_descr:hover {
-	transition-duration: 1.5s;
-	opacity: 1;
-}
 
-.people_name{
+
+
+.people__name{
 	color: #ffffff;
 	font-family: Gagalin;
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-weight: 400;
-	line-height: 28.11px;
+	line-height: 1.75rem;
 }
-.people_comment{
+.people__comment{
 	color: #ffffff;
 	font-family: Ubuntu;
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-weight: 300;
-	line-height: 24px;
+	line-height: 1.5rem;
 }
 .people_details{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 110px;
-	height: 35px;
+	width: 6.875rem;
+	height: 2.125rem;
 	background-color: #2f3234;
-	border-radius: 5px;
+	border-radius: 0.3125rem;
 }
-.people_details-btn{
+.more__btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 6.875rem;
+	height: 2.1875rem;
+	border-radius: 0.3125rem;
+	background-color: #2f3234;
+}
+.more-btn__txt{
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -189,8 +131,8 @@
 	height: 100%;
 	color: #ffffff;
 	font-family: Ubuntu;
-	font-size: 13px;
+	font-size: 0.8125rem;
 	font-weight: 500;
-	line-height: 30px;
+	line-height: 1.875rem;
 	text-transform: uppercase;
 }

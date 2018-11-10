@@ -1,3 +1,24 @@
+$tablets: 768px;
+$phones: 480px;
+
+@media (max-width: $tablets) {
+
+}
+
+@media (max-width: $phones) {
+
+}
+
+@mixin tablets {
+	@media (max-width: $tablets) {
+		@content;
+	}
+}
+@mixin phones {
+	@media (max-width: $phones) {
+		@content;
+	}
+}
 .team__page{
 	display: flex;
 	width: 100%;
@@ -15,7 +36,6 @@
 	position: relative;
 	width: 100%;
 	height: 100%;
-	border: solid 1px #f9b43b;
 }
 .container__block{
 	display: flex;
@@ -29,6 +49,9 @@
 	bottom: 0;
 	background-color: #2f3234;
 	opacity: 0.93;
+	@include tablets {
+	top: 15.5%;
+}
 }
 .accordeon__block{
 	display: flex;
@@ -37,6 +60,12 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
+}
+.accordeon__elements{
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: inherit;
+	margin: 0;
 }
 
 
@@ -55,9 +84,9 @@
 	top: 0;
 	color: #f9b43b;
 	font-family: Gagalin;
-	font-size: 72px;
+	font-size: 4.5rem;
 	font-weight: 400;
-	line-height: 64.04px;
+	line-height: 4rem;
 }
 
 .team__acordeon{
@@ -78,31 +107,31 @@
 	width: 0;
 	height: 0;
 	border-style: solid;
-	border-width: 0 4.5px 7px 4.5px;
+	border-width: 0 0.25rem 0.4375rem 0.25rem;
 	border-color: transparent transparent #f9b33b transparent;
 }
 .team-name__txt{
 	padding: 5%;
 	color: #ffffff;
 	font-family: Gagalin;
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-weight: 400;
-	line-height: 28.13px;
+	line-height: 1.75rem;
 }
 .team__dscr{
 	display: flex;
 	width: 100%;
 	align-items: center;
 	overflow: hidden;
-    max-height: 0%;
-	height: 0px;
+	max-height: 0;
+	transition: 1.5s;
 }
 .team__img{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 100px;
-	height: 100px;
+	width: 6.25rem;
+	height: 6.25rem;
 	border-radius: 50%;
 	background-size: auto;
 	overflow: hidden;
@@ -118,33 +147,32 @@
 	flex-direction: column;
 	width: 45%;
 	height: 100%;
-	padding: 20px;
-	margin-top: -22px;
+	padding: 1.25rem;
+	margin-top: -1.375rem;
 }
 .dscr-txt__function{
 	color: #ffffff;
 	font-family: Ubuntu;
-	font-size: 14px;
-	line-height: 24.01px;
+	font-size: 0.875rem;
+	line-height: 1.5rem;
 	font-weight: 700;
 }
 .dscr-txt__txt{
 	color: #ffffff;
 	font-family: Ubuntu;
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-weight: 300;
-	line-height: 24.01px;
+	line-height: 1.5rem;
 }	
 .team__acordeon:hover {
 	.team__dscr{
-		max-height: 100%;
-		height: 100%;
+		max-height: 62.5rem;
 	}
 	.team-name__txt{
 		color: #f9b43b;
 	}
 		.pre-name__triagle{
-		border-width: 7px 4.5px 0 4.5px;
+		border-width: 0.4375rem 0.25rem 0 0.25rem;
 		border-color: #f9b33b transparent transparent transparent;
 	}
 }

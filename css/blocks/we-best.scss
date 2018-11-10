@@ -1,3 +1,26 @@
+
+$tablets: 768px;
+$phones: 480px;
+
+@media (max-width: $tablets) {
+
+}
+
+@media (max-width: $phones) {
+
+}
+
+@mixin tablets {
+	@media (max-width: $tablets) {
+		@content;
+	}
+}
+@mixin phones {
+	@media (max-width: $phones) {
+		@content;
+	}
+}
+
 ul {
 	list-style-type: none;
 }
@@ -16,22 +39,41 @@ ul {
 	align-items: center;
 	flex-direction: column;
 	height: 55%;
-	width: 950px;
+	width: 100%;
 	justify-content: space-between;
+	@include phones {
+	height: 100%;
+}
+
 }
 .we-best__content{
 	height: 70%;
+	width: 100%;
+	@include phones {
+	height: 100%;
 }
+}
+
 .content__block{
 	display: flex;
 	list-style-type: none;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 0 10%;
+	@include phones {
+	flex-direction: column; 
 }
+}
+.content__block ul {
+	list-style-type: none;
+}
+
 .container__txt{
 	color: #2f3234;
 	font-family: Gagalin;
-	font-size: 72px;
+	font-size: 4.5rem;
 	font-weight: 400;
-	line-height: 64.05px;
+	line-height: 4rem;
 }
 .content__elem{
 	display: flex;
@@ -42,21 +84,20 @@ ul {
 .content__elem_txt1{
 	color: #2f3234;
 	font-family: Lifehack;
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-weight: 500;
-	line-height: 28.14px;
+	line-height: 1.75rem;
 	letter-spacing: -0.6px;
 }
 .content__elem_txt2{
-	width: 281px;
-	height: 62px;
+	width: 17.5625rem;
 	opacity: 0.8;
 	color: #2f3234;
 	font-family: Ubuntu;
-	font-size: 14px;
+	font-size: 	0.875;
 	font-weight: 300;
-	line-height: 24.02px;
+	line-height: 1.5rem;
 }
 .content__elem li{
-	margin-bottom: 20px;
+	margin-bottom: 1.25rem;
 }

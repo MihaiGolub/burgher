@@ -1,22 +1,62 @@
+
+
+
+$tablets: 768px;
+$phones: 480px;
+
+@media (max-width: $tablets) {
+
+}
+
+@media (max-width: $phones) {
+
+}
+
+@mixin tablets {
+	@media (max-width: $tablets) {
+		@content;
+	}
+}
+@mixin phones {
+	@media (max-width: $phones) {
+		@content;
+	}
+}
+
 .hero__container{
 	display: flex;
+	position: relative;
 	flex-direction: column;
 	height: 100vh;
-	width: 950px;
+	width: 68.75rem;
 	justify-content: space-between;
 }
 .header{
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	width: 100%;
-	height: 70px;
+	height: 4.375rem;
 	margin-top: 2vh;
+	@include tablets{
+		justify-content: flex-start;
+	}
+	@include phones {
+	justify-content: space-evenly;
 }
+}
+.img-hero{
+	max-width: 100%;
+	max-height: 100%;
+}
+
 .sidebar{
 	text-align: center;
     display: inline;
     text-decoration: none;
+    @include tablets{
+    	display: none;
+    }
 }
 .sidebar__container{
 	display: flex;
@@ -25,7 +65,7 @@
 .sidebar__elem{
 	display: flex;
 	align-items: center;
-	padding: 7px;
+	padding: 0.4375rem;
 }
 a{
 	text-decoration: none;
@@ -34,37 +74,47 @@ a{
 .sidebar__elem_txt{
 	color: #ffffff;
 	font-family: Ubuntu;
-	font-size: 13px;
+	font-size: 0.8125rem;
 	font-weight: 500;
-	line-height: 30px;
+	line-height: 1.875rem;
 	text-transform: uppercase;
 }
 .circle{
   display: flex;
-  width: 5px;
-  height: 5px;
+  width: 0.3125rem;
+  height: 0.3125rem;
   border-radius: 50%;
   background-color: #fff;
 }
 .button{
 	display: flex;
+	right: 0%;
 	align-items: center;
 	justify-content: center;
 	color: #ffffff;
 	font-family: Ubuntu;
-	font-size: 13px;
+	font-size: 0.8125rem;
 	font-weight: 500;
-	line-height: 30px;
+	line-height: 1.875rem;
 	text-transform: uppercase;
-	width: 97px;
-	height: 35px;
-	border-radius: 5px;
+	width: 6.0625rem;
+	height: 2.1875rem;
+	border-radius: 0.3125rem;
 	background-color: #e45028;
+	@include tablets{
+	position: absolute;	
+	right: 15%;
+    top: 3%;
+	}
+	@include phones {
+	position: unset;
+}
 }
 .hero__content{
 	display: flex;
 	width: 100%;
 	height: 100%;
+	justify-content: center;
 	align-items: center;
 }
 .hero__arrow{
@@ -84,23 +134,45 @@ a{
 .content__txt1{
 	color: #f9b43b;
 	font-family: Gagalin;
-	font-size: 72px;
+	font-size: 4.5rem;
 	font-weight: 400;
-	line-height: 85px;
+	line-height: 5.3125rem;
 }
 .content__txt2{
 	color: #ffffff;
 	font-family: Lifehack;
 	font-weight: 500;
-	font-size: 65px;
-	letter-spacing: -1.63px;
-	line-height: 85px;
+	font-size: 4.0625rem;
+	letter-spacing: -0.0625rem;
+	line-height: 5.3125rem;
 }
 .content__txt3{
 	color: #ffffff;
 	font-family: Lifehack;
 	font-weight: 500;
-	font-size: 65px;
-	letter-spacing: -1.63px;
-	line-height: 60px;
+	font-size: 4.0625rem;
+	letter-spacing: -0.0625rem;
+	line-height: 3.75rem;
+}
+.nav__sidebar-icon{
+	display: flex;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 2%;
+    border-radius: 20%;
+    right: 0%;
+    background-color: #ffd47a;
+    display: none;
+    @include tablets {
+    	display: flex;
+    	right: 2%;
+    }
+    @include phones {
+	position: unset;
+}
+}
+.sidebar-icon__mdf{
+	width: 100%;
+	height: 100%;
 }

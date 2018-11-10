@@ -19,7 +19,7 @@
   position: absolute;
   width: 100%;
   bottom: 0;
-  height: 60px;
+  height: 3.75rem;
   background-image: url(../img/footer-bg.png);
   background-repeat: no-repeat;
   background-size: cover; }
@@ -28,7 +28,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 950px;
+  width: 68.75rem;
   height: 100%;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -51,7 +51,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 10px;
+  margin-top: 0.625rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -60,9 +60,9 @@
 .contacts__adress {
   color: #ffffff;
   font-family: Ubuntu;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 300;
-  line-height: 24px; }
+  line-height: 1.5rem; }
 
 .contacts__telefon {
   display: -webkit-box;
@@ -71,21 +71,13 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-position: -5px -35px; }
-
-.sprite-phone {
-  background-image: url(../img/spritesheet.png);
-  background-repeat: no-repeat;
-  display: block;
-  width: 12px;
-  height: 11px;
-  background-position: -5px -35px; }
+  background-position: -0.3125rem -2.1875rem; }
 
 .contacts__number {
   font-family: Ubuntu;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #e45028;
-  margin-left: 7px;
+  margin-left: 0.4375rem;
   font-weight: 700; }
 
 .footer__social {
@@ -101,29 +93,11 @@
   -ms-flex-pack: end;
   justify-content: flex-end; }
 
-.sprite-vk {
-  background-image: url(../img/spritesheet.png);
-  width: 23px;
-  height: 13px;
-  background-position: -65px -5px;
-  margin-right: 20px; }
-
-.sprite-fb {
-  background-image: url(../img/spritesheet.png);
+.footer-icon {
   width: 20px;
-  height: 20px;
-  background-position: -5px -5px;
-  margin-right: 20px; }
+  padding: 10px;
+  height: 20px; }
 
-.sprite-inst {
-  background-image: url(../img/spritesheet.png);
-  width: 20px;
-  height: 20px;
-  background-position: -35px -5px;
-  margin-right: 20px; }
-
-.sprite-twitter {
-  background-image: url(../img/spritesheet.png);
-  width: 20px;
-  height: 16px;
-  background-position: -27px -35px; }
+.footer-icon:hover {
+  background-color: #ffffff;
+  border-radius: 25%; }

@@ -1,0 +1,57 @@
+
+$tablets: 768px;
+$phones: 480px;
+
+@mixin tablets {
+	@media (max-width: $tablets) {
+		@content;
+	}
+}
+@mixin phones {
+	@media (max-width: $phones) {
+		@content;
+	}
+}
+
+.hero__content{
+	@include tablets {
+		flex-direction: column;
+	}
+}
+
+html{
+
+	@include tablets{
+		font-size: 10px;
+	}
+	@include phones {
+		font-size: 7px;
+	}
+}
+.header{
+	@include tablets{
+		justify-content: flex-start;
+	}
+}
+.nav__sidebar-icon{
+	@include tablets{
+		display: visible;
+	}
+}
+
+.nav__sidebar-icon{
+	@include tablets {
+		opacity: 1;
+	}
+}
+
+html {
+		@include tablets{
+		font-size: 12px;
+	}
+}
+html {
+		@include phones {
+		font-size: 12px;
+	}
+}
