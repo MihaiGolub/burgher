@@ -485,6 +485,12 @@ template {
 
 html {
   font-size: 16px; }
+  @media (max-width: 768px) {
+    html {
+      font-size: 13px; } }
+  @media (max-width: 480px) {
+    html {
+      font-size: 11px; } }
 
 .hero__container {
   display: -webkit-box;
@@ -558,7 +564,7 @@ a {
 
 .sidebar__elem_txt {
   color: #ffffff;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 0.8125rem;
   font-weight: 500;
   line-height: 1.875rem;
@@ -585,7 +591,7 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
   color: #ffffff;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 0.8125rem;
   font-weight: 500;
   line-height: 1.875rem;
@@ -638,14 +644,14 @@ a {
 
 .content__txt1 {
   color: #f9b43b;
-  font-family: Gagalin;
+  font-family: 'Gagalin-Regular';
   font-size: 4.5rem;
   font-weight: 400;
   line-height: 5.3125rem; }
 
 .content__txt2 {
   color: #ffffff;
-  font-family: Lifehack;
+  font-family: 'Lifehack-Medium';
   font-weight: 500;
   font-size: 4.0625rem;
   letter-spacing: -0.0625rem;
@@ -653,7 +659,7 @@ a {
 
 .content__txt3 {
   color: #ffffff;
-  font-family: Lifehack;
+  font-family: 'Lifehack-Medium';
   font-weight: 500;
   font-size: 4.0625rem;
   letter-spacing: -0.0625rem;
@@ -748,14 +754,15 @@ ul {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
-      flex-direction: column; } }
+      flex-direction: column;
+      height: 100%; } }
 
 .content__block ul {
   list-style-type: none; }
 
 .container__txt {
   color: #2f3234;
-  font-family: Gagalin;
+  font-family: 'Gagalin-Regular';
   font-size: 4.5rem;
   font-weight: 400;
   line-height: 4rem; }
@@ -775,7 +782,7 @@ ul {
 
 .content__elem_txt1 {
   color: #2f3234;
-  font-family: Lifehack;
+  font-family: 'Lifehack-Medium';
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.75rem;
@@ -785,7 +792,7 @@ ul {
   width: 17.5625rem;
   opacity: 0.8;
   color: #2f3234;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 0.875;
   font-weight: 300;
   line-height: 1.5rem; }
@@ -810,7 +817,8 @@ ul {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
-      flex-direction: column; } }
+      flex-direction: column;
+      height: 100%; } }
 
 .people__elements {
   display: -webkit-box;
@@ -893,14 +901,14 @@ ul {
 
 .people__name {
   color: #ffffff;
-  font-family: Gagalin;
+  font-family: 'Gagalin-Regular';
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.75rem; }
 
 .people__comment {
   color: #ffffff;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.5rem; }
@@ -948,7 +956,7 @@ ul {
   width: 100%;
   height: 100%;
   color: #ffffff;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 0.8125rem;
   font-weight: 500;
   line-height: 1.875rem;
@@ -1002,9 +1010,9 @@ ul {
   bottom: 0;
   background-color: #2f3234;
   opacity: 0.93; }
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
     .container__block {
-      top: 15.5%; } }
+      width: 100%; } }
 
 .accordeon__block {
   display: -webkit-box;
@@ -1052,7 +1060,7 @@ ul {
   left: 0;
   top: 0;
   color: #f9b43b;
-  font-family: Gagalin;
+  font-family: 'Gagalin-Regular';
   font-size: 4.5rem;
   font-weight: 400;
   line-height: 4rem; }
@@ -1096,7 +1104,7 @@ ul {
 .team-name__txt {
   padding: 5%;
   color: #ffffff;
-  font-family: Gagalin;
+  font-family: 'Gagalin-Regular';
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.75rem; }
@@ -1154,14 +1162,14 @@ ul {
 
 .dscr-txt__function {
   color: #ffffff;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 0.875rem;
   line-height: 1.5rem;
   font-weight: 700; }
 
 .dscr-txt__txt {
   color: #ffffff;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.5rem; }
@@ -1189,7 +1197,7 @@ ul {
 
 .menu__page .menu__title {
   color: #ffffff;
-  font-family: Gagalin;
+  font-family: 'Gagalin-Regular';
   font-size: 4.5rem;
   font-weight: 400;
   line-height: 4rem;
@@ -1262,7 +1270,7 @@ ul {
 
 .accordeon-menu__txt {
   padding: 1.875rem;
-  width: 31.25rem; }
+  width: 28.25rem; }
 
 .accordeon-menu__elem:hover .accordeon-menu__content {
   max-width: 31.25rem; }
@@ -1315,10 +1323,13 @@ ul {
   width: 100%;
   height: auto;
   color: #f9b43b;
-  font-family: Gagalin;
+  font-family: 'Gagalin-Regular';
   font-size: 4.5rem;
   font-weight: 400;
   line-height: 3.9375rem; }
+  @media (max-width: 480px) {
+    .order__title {
+      text-align: center; } }
 
 .form__container {
   display: -webkit-box;
@@ -1399,7 +1410,7 @@ ul {
 
 .form__block-title {
   color: #ffffff;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.5rem; }
@@ -1436,7 +1447,7 @@ ul {
 
 .radio__text {
   color: #ffffff;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.5rem;
@@ -1483,7 +1494,7 @@ ul {
   display: -ms-flexbox;
   display: flex;
   display: flex;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1532,7 +1543,7 @@ ul {
   bottom: -19%;
   right: 30%;
   color: #ffffff;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.5rem; }
@@ -1545,7 +1556,7 @@ ul {
 
 .label__txt {
   color: #ffffff;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.5rem; }
@@ -1636,7 +1647,7 @@ ul {
 
 .contacts__adress {
   color: #ffffff;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.5rem; }
@@ -1651,7 +1662,7 @@ ul {
   background-position: -0.3125rem -2.1875rem; }
 
 .contacts__number {
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 0.875rem;
   color: #e45028;
   margin-left: 0.4375rem;
@@ -1672,9 +1683,12 @@ ul {
 
 .footer-icon {
   width: 20px;
-  padding: 10px;
-  height: 20px; }
+  margin-right: 10px;
+  height: 20px;
+  fill: #585858;
+  padding: 3px;
+  border-radius: 3px; }
 
 .footer-icon:hover {
-  background-color: #ffffff;
-  border-radius: 25%; }
+  background-color: #fff;
+  fill: #000; }

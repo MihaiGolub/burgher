@@ -1,7 +1,7 @@
 $tablets: 768px;
 $phones: 480px;
-
 @import "normalize.scss";
+@import "general/media.scss";
 @import "general/fonts.scss";
 @import "general/layout.scss";
 @import "blocks/landing-page.scss";

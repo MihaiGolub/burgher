@@ -43,10 +43,13 @@
   width: 100%;
   height: auto;
   color: #f9b43b;
-  font-family: Gagalin;
+  font-family: 'Gagalin-Regular';
   font-size: 4.5rem;
   font-weight: 400;
   line-height: 3.9375rem; }
+  @media (max-width: 480px) {
+    .order__title {
+      text-align: center; } }
 
 .form__container {
   display: -webkit-box;
@@ -127,7 +130,7 @@
 
 .form__block-title {
   color: #ffffff;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.5rem; }
@@ -164,7 +167,7 @@
 
 .radio__text {
   color: #ffffff;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.5rem;
@@ -211,7 +214,7 @@
   display: -ms-flexbox;
   display: flex;
   display: flex;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -260,7 +263,7 @@
   bottom: -19%;
   right: 30%;
   color: #ffffff;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.5rem; }
@@ -273,7 +276,7 @@
 
 .label__txt {
   color: #ffffff;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.5rem; }

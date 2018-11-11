@@ -61,7 +61,8 @@ ul {
 	justify-content: space-evenly;
 	margin: 0 10%;
 	@include phones {
-	flex-direction: column; 
+	flex-direction: column;
+	height: 100%; 
 }
 }
 .content__block ul {
@@ -70,7 +71,7 @@ ul {
 
 .container__txt{
 	color: #2f3234;
-	font-family: Gagalin;
+	font-family: 'Gagalin-Regular';
 	font-size: 4.5rem;
 	font-weight: 400;
 	line-height: 4rem;
@@ -83,7 +84,7 @@ ul {
 }
 .content__elem_txt1{
 	color: #2f3234;
-	font-family: Lifehack;
+	font-family: 'Lifehack-Medium';
 	font-size: 1.5rem;
 	font-weight: 500;
 	line-height: 1.75rem;
@@ -93,7 +94,7 @@ ul {
 	width: 17.5625rem;
 	opacity: 0.8;
 	color: #2f3234;
-	font-family: Ubuntu;
+	font-family: 'Ubuntu';
 	font-size: 	0.875;
 	font-weight: 300;
 	line-height: 1.5rem;

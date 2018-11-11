@@ -45,10 +45,13 @@ $phones: 480px;
 	width: 100%;
 	height: auto;
 	color: #f9b43b;
-	font-family: Gagalin;
+	font-family: 'Gagalin-Regular';
 	font-size: 4.5rem;
 	font-weight: 400;
 	line-height: 3.9375rem;
+	@include phones {
+		text-align: center;
+	}
 }
 .form__container{
 	display: flex;
@@ -100,7 +103,7 @@ $phones: 480px;
 }
 .form__block-title{
 	color: #ffffff;
-	font-family: Ubuntu;
+	font-family: 'Ubuntu';
 	font-size: 0.875rem;
 	font-weight: 300;
 	line-height: 1.5rem;
@@ -135,7 +138,7 @@ $phones: 480px;
 }
 .radio__text{
 	color: #ffffff;
-	font-family: Ubuntu;
+	font-family: 'Ubuntu';
 	font-size: 0.875rem;
 	font-weight: 300;
 	line-height: 1.5rem;
@@ -176,7 +179,7 @@ $phones: 480px;
 .radio-group {
     display: flex;
     display: flex;
-    font-family: Ubuntu;
+    font-family: 'Ubuntu';
     align-items: center;
     justify-content: space-between;
     width: 60%;
@@ -217,7 +220,7 @@ $phones: 480px;
 	bottom: -19%;
     right: 30%;
     color: #ffffff;
-	font-family: Ubuntu;
+	font-family: 'Ubuntu';
 	font-size: 0.875rem;
 	font-weight: 300;
 	line-height: 1.5rem;
@@ -230,7 +233,7 @@ $phones: 480px;
 }
 .label__txt{
 	color: #ffffff;
-	font-family: Ubuntu;
+	font-family: 'Ubuntu';
 	font-size: 0.875rem;
 	font-weight: 300;
 	line-height: 1.5rem;
