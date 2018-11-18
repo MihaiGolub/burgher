@@ -67,6 +67,9 @@ ul {
 .content__block ul {
   list-style-type: none; }
 
+.img__elem {
+  margin-right: 3%; }
+
 .container__txt {
   color: #2f3234;
   font-family: 'Gagalin-Regular';
@@ -86,6 +89,12 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media (max-width: 480px) {
+    .content__elem {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; } }
 
 .content__elem_txt1 {
   color: #2f3234;
@@ -94,6 +103,9 @@ ul {
   font-weight: 500;
   line-height: 1.75rem;
   letter-spacing: -0.6px; }
+  @media (max-width: 480px) {
+    .content__elem_txt1 {
+      text-align: left; } }
 
 .content__elem_txt2 {
   width: 17.5625rem;
@@ -103,6 +115,10 @@ ul {
   font-size: 0.875;
   font-weight: 300;
   line-height: 1.5rem; }
+  @media (max-width: 480px) {
+    .content__elem_txt2 {
+      text-align: left;
+      width: 25.5625rem; } }
 
 .content__elem li {
   margin-bottom: 1.25rem; }

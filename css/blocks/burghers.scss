@@ -77,6 +77,10 @@ background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, 
 	border-radius: 10%;
 	margin-top: -50%;
 	left: 10%;
+			    @include phones {
+	margin-top: -100%;
+    left: -35%;
+}
 }
 .elem__img{
 	display: flex;
@@ -113,12 +117,12 @@ background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, 
 	bottom: 5%;
 	left: 10%;
 	    @include tablets {
-    top: -23%;
-    left: 70%;
+    top: -22%;
+    left: 80%;
 }
     @include phones {
-    top: 0%;
-    left: 70%;
+	top: -25%;
+    left: 100%;
 }
 }
 .elem__img2{
@@ -159,6 +163,9 @@ background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, 
 	font-size: 4.5rem;
 	font-weight: 400;
 	line-height: 4rem;
+	        @include tablets {
+		    text-align: center;
+}
 }
 .details__dscr{
 	color: #ffffff;
@@ -166,6 +173,9 @@ background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, 
 	font-size: 0.875rem;
 	font-weight: 300;
 	line-height: 1.5rem;
+		        @include tablets {
+		    text-align: center;
+}
 }
 .price__nr{
 	color: #e35028;
@@ -190,7 +200,7 @@ background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, 
 	bottom: 65%;
 }
 		    @include tablets {
-	bottom: 65%;
+	bottom: 50%;
 }
 
 }
@@ -201,7 +211,7 @@ background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, 
 	bottom: 65%;
 }
 		    @include tablets {
-	bottom: 65%;
+	bottom: 50%;
 }
 }
 .burghers__btn{
@@ -209,8 +219,8 @@ background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, 
 	position: absolute;
 	justify-content: center;
 	align-items: center;
-	width: 98px;
-	height: 35px;
+	width: 6.125rem;
+    height: 2.1875rem;
 	background-color: #e45028;
 	border-radius: 10%;
 	padding: 0;
@@ -225,11 +235,11 @@ background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, 
     bottom: 28%;
     cursor: pointer;
         @include tablets {
-    right: 25%;
-    bottom: 13%;
+    right: 35%;
+    bottom: 16%;
 }
     @include phones {
-	right: 20%;
-    bottom: 12%;
+    right: 20%;
+    bottom: 15%;
 }
 }

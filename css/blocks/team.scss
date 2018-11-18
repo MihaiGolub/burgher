@@ -50,6 +50,7 @@ $phones: 480px;
 	background-color: #2f3234;
 	opacity: 0.93;
 	@include tablets {
+		width: 100%;
 }
 	@include phones {
 		width: 100%;
@@ -89,6 +90,11 @@ $phones: 480px;
 	font-size: 4.5rem;
 	font-weight: 400;
 	line-height: 4rem;
+			    @include tablets {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
 }
 
 .team__acordeon{
@@ -104,6 +110,9 @@ $phones: 480px;
 	justify-content: flex-start;
 	width: 100%;
 	height: auto;
+			    @include tablets {
+	justify-content: center;
+}
 }
 .pre-name__triagle{
 	width: 0;
@@ -119,6 +128,9 @@ $phones: 480px;
 	font-size: 0.875rem;
 	font-weight: 400;
 	line-height: 1.75rem;
+			    @include tablets {
+	    font-size: 1.5625rem;
+}
 }
 .team__dscr{
 	display: flex;
@@ -127,6 +139,9 @@ $phones: 480px;
 	overflow: hidden;
 	max-height: 0;
 	transition: 1.5s;
+			    @include tablets {
+	flex-direction: column;
+}
 }
 .team__img{
 	display: flex;
@@ -158,6 +173,10 @@ $phones: 480px;
 	font-size: 0.875rem;
 	line-height: 1.5rem;
 	font-weight: 700;
+				    @include tablets {
+	text-align: center;
+}
+
 }
 .dscr-txt__txt{
 	color: #ffffff;
@@ -165,6 +184,9 @@ $phones: 480px;
 	font-size: 0.875rem;
 	font-weight: 300;
 	line-height: 1.5rem;
+			    @include tablets {
+	text-align: center;
+}
 }	
 .team__acordeon:hover {
 	.team__dscr{

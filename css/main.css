@@ -800,6 +800,9 @@ ul {
 .content__block ul {
   list-style-type: none; }
 
+.img__elem {
+  margin-right: 3%; }
+
 .container__txt {
   color: #2f3234;
   font-family: 'Gagalin-Regular';
@@ -819,6 +822,12 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media (max-width: 480px) {
+    .content__elem {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; } }
 
 .content__elem_txt1 {
   color: #2f3234;
@@ -827,6 +836,9 @@ ul {
   font-weight: 500;
   line-height: 1.75rem;
   letter-spacing: -0.6px; }
+  @media (max-width: 480px) {
+    .content__elem_txt1 {
+      text-align: left; } }
 
 .content__elem_txt2 {
   width: 17.5625rem;
@@ -836,6 +848,10 @@ ul {
   font-size: 0.875;
   font-weight: 300;
   line-height: 1.5rem; }
+  @media (max-width: 480px) {
+    .content__elem_txt2 {
+      text-align: left;
+      width: 25.5625rem; } }
 
 .content__elem li {
   margin-bottom: 1.25rem; }
@@ -889,7 +905,7 @@ ul {
       width: 50%; } }
   @media (max-width: 480px) {
     .people__container {
-      width: 100%; } }
+      width: 50%; } }
 
 .people__content {
   display: -webkit-box;
@@ -909,6 +925,15 @@ ul {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   opacity: 0; }
+  @media (max-width: 768px) {
+    .people__content {
+      height: 25vh;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly; } }
 
 .people__container:hover {
   -webkit-filter: brightness(100%);
@@ -945,6 +970,10 @@ ul {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.75rem; }
+  @media (max-width: 480px) {
+    .people__name {
+      font-size: 1.6rem;
+      text-align: center; } }
 
 .people__comment {
   color: #ffffff;
@@ -952,6 +981,12 @@ ul {
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.5rem; }
+  @media (max-width: 768px) {
+    .people__comment {
+      text-align: center; } }
+  @media (max-width: 480px) {
+    .people__comment {
+      display: none; } }
 
 .people_details {
   display: -webkit-box;
@@ -1050,6 +1085,9 @@ ul {
   bottom: 0;
   background-color: #2f3234;
   opacity: 0.93; }
+  @media (max-width: 768px) {
+    .container__block {
+      width: 100%; } }
   @media (max-width: 480px) {
     .container__block {
       width: 100%; } }
@@ -1104,6 +1142,15 @@ ul {
   font-size: 4.5rem;
   font-weight: 400;
   line-height: 4rem; }
+  @media (max-width: 768px) {
+    .team__txt {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      width: 100%; } }
 
 .team__acordeon {
   display: -webkit-box;
@@ -1133,6 +1180,11 @@ ul {
   justify-content: flex-start;
   width: 100%;
   height: auto; }
+  @media (max-width: 768px) {
+    .team__name {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .pre-name__triagle {
   width: 0;
@@ -1148,6 +1200,9 @@ ul {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.75rem; }
+  @media (max-width: 768px) {
+    .team-name__txt {
+      font-size: 1.5625rem; } }
 
 .team__dscr {
   display: -webkit-box;
@@ -1162,6 +1217,12 @@ ul {
   -webkit-transition: 1.5s;
   -o-transition: 1.5s;
   transition: 1.5s; }
+  @media (max-width: 768px) {
+    .team__dscr {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .team__img {
   display: -webkit-box;
@@ -1206,6 +1267,9 @@ ul {
   font-size: 0.875rem;
   line-height: 1.5rem;
   font-weight: 700; }
+  @media (max-width: 768px) {
+    .dscr-txt__function {
+      text-align: center; } }
 
 .dscr-txt__txt {
   color: #ffffff;
@@ -1213,6 +1277,9 @@ ul {
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.5rem; }
+  @media (max-width: 768px) {
+    .dscr-txt__txt {
+      text-align: center; } }
 
 .team__acordeon:hover .team__dscr {
   max-height: 62.5rem; }
@@ -1824,6 +1891,10 @@ ul {
   border-radius: 10%;
   margin-top: -50%;
   left: 10%; }
+  @media (max-width: 480px) {
+    .burgher__item-elem {
+      margin-top: -100%;
+      left: -35%; } }
 
 .elem__img {
   display: -webkit-box;
@@ -1882,12 +1953,12 @@ ul {
   left: 10%; }
   @media (max-width: 768px) {
     .burgher__item-elem2 {
-      top: -23%;
-      left: 70%; } }
+      top: -22%;
+      left: 80%; } }
   @media (max-width: 480px) {
     .burgher__item-elem2 {
-      top: 0%;
-      left: 70%; } }
+      top: -25%;
+      left: 100%; } }
 
 .elem__img2 {
   display: -webkit-box;
@@ -1940,6 +2011,9 @@ ul {
   font-size: 4.5rem;
   font-weight: 400;
   line-height: 4rem; }
+  @media (max-width: 768px) {
+    .details__name {
+      text-align: center; } }
 
 .details__dscr {
   color: #ffffff;
@@ -1947,6 +2021,9 @@ ul {
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.5rem; }
+  @media (max-width: 768px) {
+    .details__dscr {
+      text-align: center; } }
 
 .price__nr {
   color: #e35028;
@@ -1972,7 +2049,7 @@ ul {
       bottom: 65%; } }
   @media (max-width: 768px) {
     .burghers__arrow-left {
-      bottom: 65%; } }
+      bottom: 50%; } }
 
 .burghers__arrow-right {
   position: absolute;
@@ -1982,7 +2059,7 @@ ul {
       bottom: 65%; } }
   @media (max-width: 768px) {
     .burghers__arrow-right {
-      bottom: 65%; } }
+      bottom: 50%; } }
 
 .burghers__btn {
   display: -webkit-box;
@@ -1995,8 +2072,8 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 98px;
-  height: 35px;
+  width: 6.125rem;
+  height: 2.1875rem;
   background-color: #e45028;
   border-radius: 10%;
   padding: 0;
@@ -2012,9 +2089,9 @@ ul {
   cursor: pointer; }
   @media (max-width: 768px) {
     .burghers__btn {
-      right: 25%;
-      bottom: 13%; } }
+      right: 35%;
+      bottom: 16%; } }
   @media (max-width: 480px) {
     .burghers__btn {
       right: 20%;
-      bottom: 12%; } }
+      bottom: 15%; } }

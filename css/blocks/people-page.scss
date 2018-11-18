@@ -53,7 +53,7 @@ $phones: 480px;
 		width: 50%;
 	}
 	@include phones {
-	width: 100%;
+	width: 50%;
 }
 }
 .people__content{
@@ -66,6 +66,11 @@ $phones: 480px;
 	height: 70%;
 	justify-content: space-around;
 	opacity: 0;
+			    @include tablets {
+	height: 25vh;
+	align-items: center;
+	justify-content: space-evenly;
+}
 }
 
 .people__container:hover{
@@ -98,6 +103,10 @@ $phones: 480px;
 	font-size: 0.875rem;
 	font-weight: 400;
 	line-height: 1.75rem;
+			    @include phones {
+	font-size: 1.6rem;
+    text-align: center;
+}
 }
 .people__comment{
 	color: #ffffff;
@@ -105,6 +114,12 @@ $phones: 480px;
 	font-size: 0.875rem;
 	font-weight: 300;
 	line-height: 1.5rem;
+			    @include tablets {
+	text-align: center;
+}
+		    @include phones {
+	display: none;
+}
 }
 .people_details{
 	display: flex;

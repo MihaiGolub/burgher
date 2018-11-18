@@ -46,6 +46,9 @@
   bottom: 0;
   background-color: #2f3234;
   opacity: 0.93; }
+  @media (max-width: 768px) {
+    .container__block {
+      width: 100%; } }
   @media (max-width: 480px) {
     .container__block {
       width: 100%; } }
@@ -100,6 +103,15 @@
   font-size: 4.5rem;
   font-weight: 400;
   line-height: 4rem; }
+  @media (max-width: 768px) {
+    .team__txt {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      width: 100%; } }
 
 .team__acordeon {
   display: -webkit-box;
@@ -129,6 +141,11 @@
   justify-content: flex-start;
   width: 100%;
   height: auto; }
+  @media (max-width: 768px) {
+    .team__name {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .pre-name__triagle {
   width: 0;
@@ -144,6 +161,9 @@
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.75rem; }
+  @media (max-width: 768px) {
+    .team-name__txt {
+      font-size: 1.5625rem; } }
 
 .team__dscr {
   display: -webkit-box;
@@ -158,6 +178,12 @@
   -webkit-transition: 1.5s;
   -o-transition: 1.5s;
   transition: 1.5s; }
+  @media (max-width: 768px) {
+    .team__dscr {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .team__img {
   display: -webkit-box;
@@ -202,6 +228,9 @@
   font-size: 0.875rem;
   line-height: 1.5rem;
   font-weight: 700; }
+  @media (max-width: 768px) {
+    .dscr-txt__function {
+      text-align: center; } }
 
 .dscr-txt__txt {
   color: #ffffff;
@@ -209,6 +238,9 @@
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.5rem; }
+  @media (max-width: 768px) {
+    .dscr-txt__txt {
+      text-align: center; } }
 
 .team__acordeon:hover .team__dscr {
   max-height: 62.5rem; }
