@@ -85,6 +85,46 @@ a {
   border-radius: 50%;
   background-color: #fff; }
 
+.mobile__sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: visible; }
+
+.adaptive__sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 75%;
+  left: -105%; }
+  @media (max-width: 480px) {
+    .adaptive__sidebar {
+      top: 8%;
+      left: 27%; } }
+
+.mobile__elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: solid 1px #ffcc99;
+  border-radius: 19%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.mobile__item {
+  font-family: Ubuntu;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center; }
+
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
