@@ -67,8 +67,8 @@ background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, 
 	align-items: center;
 }
 .burgher__item-elem{
-	position: absolute;
 	display: flex;
+	position: absolute;
 	flex-direction: column;
 	justify-content: space-around;
 	width: 5.625rem;
@@ -77,9 +77,15 @@ background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, 
 	border-radius: 10%;
 	margin-top: -50%;
 	left: 10%;
+		    @include tablets {
+    margin-top: -16vh;
+    left: -15vw;
+
+}
 			    @include phones {
-	margin-top: -100%;
-    left: -35%;
+    top: 18%;
+    left: -30%;
+
 }
 }
 .elem__img{
@@ -117,8 +123,8 @@ background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, 
 	bottom: 5%;
 	left: 10%;
 	    @include tablets {
-    top: -22%;
-    left: 80%;
+    top: -1vh;
+    left: 50vw
 }
     @include phones {
 	top: -25%;
@@ -154,6 +160,7 @@ background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, 
 }
 .burghers__details{
 	display: flex;
+	position: relative;
 	flex-direction: column;
 	justify-content: space-array;
 }
@@ -231,15 +238,13 @@ background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, 
 	font-weight: 500;
 	line-height: 1.875rem;
 	text-transform: uppercase;
-	right: 20%;
-    bottom: 28%;
-    cursor: pointer;
-        @include tablets {
-    right: 35%;
-    bottom: 16%;
+	cursor: pointer;
+    left: 60%;
+    top: 80%;
+		    @include tablets {
+	top: 82%;
 }
-    @include phones {
-    right: 20%;
-    bottom: 15%;
+		    @include phones {
+	top: 85%;
 }
 }

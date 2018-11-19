@@ -1,5 +1,7 @@
-document.querySelector('#side__click');
-document.querySelector('#mobile__sidebar');
-side__click.addEventListener('click', function(){
-	mobile__sidebar.style.display = 'none';
-})
+let btn = document.getElementById('mobile__sidebar');
+let menuClose = document.getElementById('mobilemenuClose');
+
+btn.addEventListener('click', function(){
+	let menu = document.getElementById('mobileMenu');
+	menu.classList.add('mobile-menu--open');
+});

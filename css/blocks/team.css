@@ -76,6 +76,9 @@
   flex-wrap: wrap;
   padding-left: inherit;
   margin: 0; }
+  @media (max-width: 768px) {
+    .accordeon__elements {
+      text-align: center; } }
 
 .team__dscr__block {
   display: -webkit-box;

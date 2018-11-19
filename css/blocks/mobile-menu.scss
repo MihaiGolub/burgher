@@ -1,0 +1,61 @@
+.mobile-menu{
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 200vw;
+	width: 100vw;
+	height: 100vh;
+	background-color: #2f3234;
+	opacity: 0.99;
+	z-index: 100;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+}
+.mobile-menu--open{
+	left: 0;
+}
+.mobile-menu__list{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.mobile-menu__link{
+	color: #ffffff;
+	font-family: 'Ubuntu';
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 2.5rem;
+	text-transform: uppercase;
+}
+.mobile-menu__link:hover {
+	color: #f9b43b;
+}
+.close-icon{
+	position: absolute;
+	top: 3%;
+	right: 6%;
+	fill: #fff;
+	height: 20px;
+	width: 20px;
+}
+
+.mobile__sidebar{
+	position: absolute;
+	top: 3.5%;
+	right: 6%;
+	display: none;
+			    @include phones {
+	display: flex;
+}
+		    @include tablets {
+	display: flex;
+}
+}
+.circle-side{
+	width: 0.6rem;
+    height: 0.6rem;
+    }
+

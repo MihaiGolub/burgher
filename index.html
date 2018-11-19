@@ -33,29 +33,13 @@
 						</nav>
 
 
-						<div class="nav__sidebar-icon" id="side__click">
-									<div class="adaptive__sidebar">
-			<ul id="mobile__sidebar">
-					<li class="mobile__elements"><a href="#" class="mobile__item">О нас</a>
-				</li>
-					<li class="mobile__elements"><a href="#" class="mobile__item">Бургеры</a>
-				</li>
-					<li class="mobile__elements"><a href="#" class="mobile__item">Команда</a>
-				</li>
-					<li class="mobile__elements"><a href="#" class="mobile__item">Меню</a>
-				</li>
-					<li class="mobile__elements"><a href="#" class="mobile__item">Отзывы</a>
-				</li>
-					<li class="mobile__elements"><a href="#" class="mobile__item">Как мы работаем</a>
-				</li>
-					<li class="mobile__elements"><a href="#" class="mobile__item">Контакты</a>
-				</li></ul></div>
 
-							<img src="img/sidebar-icon.png" alt="" class="sidebar-icon__mdf">
-						</div>
 						<div class="button button_header">
 							<a href="#">Заказать</a>
 						</div><!--button-->
+						<div class="mobile__sidebar" id="mobileSidebar">
+							<a href="#"><img src="img/mobile-menu.png" alt=""></a>
+						</div>
 					</div><!--header-->
 					<div class="hero__content">
 						<div class="content__img"><img src="img/burgher_hero-page.png" alt="" class="img-hero"></div>
@@ -136,6 +120,7 @@
 							<span class="price__nr">500</span>
 							<span class="price__txt">рублей</span>
 						</div>
+						<button class="burghers__btn">Заказать</button>
 					</div>
 						<div class="burghers__arrow-left">
 					<a href="#">
@@ -147,7 +132,6 @@
 						<img src="img/arrow-scroll_right.png" alt="">
 					</a>
 				</div>
-				<button class="burghers__btn">Заказать</button>
 				</div>
 
 			</div>
@@ -477,7 +461,39 @@
 	</div>
 	</div>	
 	</div><!--landing-page-->
-	<script src="js/main.js" ></script>
+	<div class="mobile-menu" id="mobileMenu">
+		<ul class="mobile-menu__list">
+			<li class="mobile-menu__elem">
+				<a href="#" class="mobile-menu__link">О нас</a>
+			</li>
+			<li class="sidebar__elem"><div class="circle circle-side"></div></li>
+						<li class="mobile-menu__elem">
+				<a href="#" class="mobile-menu__link">Бургеры</a>
+			</li>
+			<li class="sidebar__elem"><div class="circle circle-side"></div></li>
+						<li class="mobile-menu__elem">
+				<a href="#" class="mobile-menu__link">Команда</a>
+			</li>
+			<li class="sidebar__elem"><div class="circle circle-side"></div></li>
+						<li class="mobile-menu__elem">
+				<a href="#" class="mobile-menu__link">Меню</a>
+			</li>
+			<li class="sidebar__elem"><div class="circle circle-side"></div></li>
+						<li class="mobile-menu__elem">
+				<a href="#" class="mobile-menu__link">Отзывы</a>
+			</li>
+			<li class="sidebar__elem"><div class="circle circle-side"></div></li>
+						<li class="mobile-menu__elem">
+				<a href="#" class="mobile-menu__link">Контакты</a>
+			</li>
+		</ul>
+		<a href="#" class="mobile-menu__close" id="mobilemenuClose">
+			<svg class="close-icon">
+			<use xlink:href="css/general/sprite.svg#close"></use>
+			</svg>
+		</a>
+	</div>
+	<script src="main.js"></script>
 </body>
 </html>
 <!---->
