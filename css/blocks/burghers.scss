@@ -33,218 +33,218 @@ background-image: -o-linear-gradient(bottom, #f9b43b 0%, #eb8c38 48%, #f9b43b 74
 background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
 }
 .burghers__container{
+	position: relative;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	width: 68.75rem;
 	height: 72%;
+	overflow: hidden;
 		@include tablets {
 		flex-direction: column;
+		height: 100%;
 	}
 
 }
-.burghers__img{
+.burghers__content{
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 31.5625rem;
-	height: 20.625rem;
-	top: 50%;
-    left: 50%;
+	flex-direction: row;
+	min-width: 100%;
+	height: 95%;
+	z-index: 1;
+		@include tablets {
+		flex-direction: column;
+		justify-content: center;
+    	align-items: center;
+    	height: 100vh;
+	}
 }
-.brg__img{
-	max-width: 100%;
-	max-height: 100%;
-}
-.burghers__item{
+.content__elem{
+	display: flex;
 	position: relative;
-	display: flex;
-	background-repeat: no-repeat;
-	background-position: center;
 	width: 50%;
 	height: 100%;
+	justify-content: center;
 	align-items: center;
+	z-index: 2;
+			@include tablets {
+justify-content: flex-end;
+	}
+			@include phones {
+    width: 90%;
+    justify-content: center;
+    align-items: flex-end;
+	}
 }
-.burgher__item-elem{
+.content__txt{
+	display: flex;
+	width: 50%;
+	height: 100%;
+			@include tablets {
+			text-align: center;
+	}
+}
+
+.burghers__arrow{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 75%;
+	position: absolute;
+	z-index: 5;
+}
+.elem__details-item{
 	display: flex;
 	position: absolute;
+	left: 0;
+	height: 100%;
+	width: auto;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
+	z-index: 3;
+	     @include  tablets {
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  top: 5%;
+}
+		@include phones {
+    top: 10%;
+	}
+}
+.elem__img-item{
+	display: flex;
+	z-index: 1;
+}
+.composition__elem{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 	width: 5.625rem;
 	height: 5.625rem;
+	border-radius: 8%;
 	background-color: #f08c33;
-	border-radius: 10%;
-	margin-top: -50%;
-	left: 10%;
-		    @include tablets {
-    margin-top: -16vh;
-    left: -15vw;
-
 }
-			    @include phones {
-    top: 18%;
-    left: -30%;
-
-}
-}
-.elem__img{
-	display: flex;
-	width: 100%;
-	height: 100%;
-	background-image: url(../img/burger.png);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-.elem__txt{
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.composition__txt{
 	color: #ffffff;
 	font-family: 'Gagalin-Regular';
-	font-size: 0.875rem;
+	font-size: 14px;
 	font-weight: 400;
-	line-height: 1.75rem;
 }
-.burghers__details{
+.brg-img{
+	width: 31.5625rem;
+	height: 20.625rem;
+}
+
+.kkal__elem{
 	display: flex;
-	width: 50%;
-	height: 80%;
-	justify-content: space-evenly;
-}
-.burgher__item-elem2{
-	display: flex;
-	position: absolute;
-	flex-direction: column;
-	width: 5.625rem;
-	height: 7rem;
-	justify-content: center;
-	align-items: center;
-	bottom: 5%;
-	left: 10%;
-	    @include tablets {
-    top: -1vh;
-    left: 50vw
-}
-    @include phones {
-	top: -25%;
-    left: 100%;
-}
-}
-.elem__img2{
-	display: flex;
-	width: 100%;
-	height: 100%;
-	align-items: center;
-	justify-content: center;
-	background-image: url(../img/kkal.png);
+	position: relative;
+	width: 3.75rem;
+	height: 4.6875rem;
 	background-repeat: no-repeat;
-	background-position: center;
+  	background-size: 100%;
+  	justify-content: center;
+  	align-items: center;
 }
-.item-elem2-txt{
+.kkal_txt{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.kkal_txt1{
+	display: flex;
 	opacity: 0.5;
+	margin-top: 145%;
 	color: #ffffff;
 	font-family: 'Gagalin-Regular';
 	font-size: 1.25rem;
 	font-weight: 400;
 	line-height: 1.5rem;
-	margin-top: 20%;
+	margin-left: 6%;
 }
-.elem__txt2{
+.kkal-img{
+	position: absolute;
+}
+.kkal_txt2{
+	display: flex;
 	opacity: 0.5;
 	color: #ffffff;
 	font-family: 'Gagalin-Regular';
 	font-size: 0.875rem;
 	font-weight: 400;
 	line-height: 1.5rem;
+	margin-top: 27%;
 }
-.burghers__details{
+
+.content__txt{
 	display: flex;
-	position: relative;
 	flex-direction: column;
-	justify-content: space-array;
+	justify-content: space-evenly;
 }
 .details__name{
 	color: #ffffff;
 	font-family: 'Gagalin-Regular';
-	font-size: 4.5rem;
+	font-size: 3.7rem;
 	font-weight: 400;
 	line-height: 4rem;
-	        @include tablets {
-		    text-align: center;
 }
-}
-.details__dscr{
+.content__txt-details{
 	color: #ffffff;
 	font-family: 'Ubuntu';
 	font-size: 0.875rem;
 	font-weight: 300;
 	line-height: 1.5rem;
-		        @include tablets {
-		    text-align: center;
 }
-}
-.price__nr{
+.details__price{
 	color: #e35028;
 	font-family: 'Gagalin-Regular';
-	font-size: 4.5rem;
-	font-weight: 400;
-	letter-spacing: -1.79px;
-	line-height: 1.75rem;
-}
-.price__txt{
-	color: #e35028;
-	font-family: Gagalin;
 	font-size: 1.875rem;
 	font-weight: 400;
 	line-height: 1.75rem;
+		@include tablets {
+		text-align: start;
+	}
+}
+.price__nr{
+	font-size: 4.5rem;
+}
+.price__txt{
 	letter-spacing: -0.75px;
-}
-.burghers__arrow-left{
-	position: absolute;
-	left: 15%;
-	    @include phones {
-	bottom: 65%;
-}
-		    @include tablets {
-	bottom: 50%;
-}
-
-}
-.burghers__arrow-right{
-	position: absolute;
-	right: 15%;
-		    @include phones {
-	bottom: 65%;
-}
-		    @include tablets {
-	bottom: 50%;
-}
 }
 .burghers__btn{
 	display: flex;
 	position: absolute;
+	width: 6.125rem;
+	height: 2.1875rem;
 	justify-content: center;
 	align-items: center;
-	width: 6.125rem;
-    height: 2.1875rem;
-	background-color: #e45028;
 	border-radius: 10%;
-	padding: 0;
-  	border: none;
-  	color: #ffffff;
+	background-color: #e45028;
+	color: #ffffff;
 	font-family: 'Ubuntu';
 	font-size: 0.8125rem;
 	font-weight: 500;
 	line-height: 1.875rem;
 	text-transform: uppercase;
 	cursor: pointer;
-    left: 60%;
-    top: 80%;
-		    @include tablets {
-	top: 82%;
+	padding: 0;
+  	border: none;
+  	right: 10%;
+    bottom: 16%;
+    		@include tablets {
+		right: 32%;
+    	bottom: 6%;
+	}
+			@include phones {
+    right: 25%;
+
+	}
 }
-		    @include phones {
-	top: 85%;
+
+.burghers__content1{
+	margin-right: 100vw;
 }
+.burghers__content3{
+	margin-left: 100vw;
 }

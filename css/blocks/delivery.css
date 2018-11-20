@@ -248,7 +248,10 @@
 .button_form {
   position: absolute;
   bottom: -22%;
-  right: 38%; }
+  right: 38%;
+  padding: 0;
+  border: none;
+  cursor: pointer; }
   @media (max-width: 768px) {
     .button_form {
       position: absolute;
@@ -265,8 +268,12 @@
   color: #ffffff;
   font-family: 'Ubuntu';
   font-size: 0.875rem;
+  background-color: transparent;
   font-weight: 300;
-  line-height: 1.5rem; }
+  line-height: 1.5rem;
+  padding: 0;
+  border: none;
+  cursor: pointer; }
   @media (max-width: 768px) {
     .button__clear {
       right: 25%; } }
