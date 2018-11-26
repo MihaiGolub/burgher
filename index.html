@@ -5,11 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	<link rel="stylesheet" href="css/general/fullpage.css">
 	<link rel="stylesheet" href="css/general/sprite.svg">
+	<link rel="stylesheet" href="css/general/fullpage.css">
+	<script src="jquery.js"></script>
+	<script src="js/fullpage.js"></script>
 	<title>Document</title>
 </head>
 <body>
-		<section>
+<div class="fullpage" id="fullpage">
+	<section class="section">
 			<div class="hero-page">
 				<div class="hero__container">
 					<div class="header">
@@ -57,8 +63,8 @@
 					</div>
 				</div><!--hero-container-->
 			</div><!--hero-page-->
-		</section><!---->
-	<section>
+	</section><!--hero-page-->
+	<section  class="section">
 		<div class="we-best-page">
 			<div class="we-best__container">
 				<div class="container__txt">Мы лучшие</div>
@@ -95,10 +101,9 @@
 			</div>
 		</div><!--we-best-page-->
 	</section><!--we-best-->
-	<section>
+	<section  class="section">
 		<div class="slider__menu">
 			<div class="slider">
-			<div class="slider__row" id="slider">
 			<div class="slider__elem">
 				<div class="slider__img">
 					<img src="img/black_bugher.png" alt="" class="brg-img">
@@ -115,7 +120,8 @@
 								<div class="kkal_txt1">1200</div>
 								<div class="kkal_txt2">ккал</div>
 							</div>
-								</div></div>
+								</div>
+							</div>
 				<div class="slider__txt">
 				<div class="details__name">Dark BEEF<br>
 					Burger</div>
@@ -129,7 +135,7 @@
 				</button>
 				</div>
 			</div><!--slider__elem-->
-						<div class="slider__elem">
+			<div class="slider__elem">
 				<div class="slider__img">
 					<img src="img/burgher2.png" alt="" class="brg-img">
 				</div>
@@ -159,7 +165,7 @@
 				</button>
 				</div>
 			</div><!--slider__elem-->
-						<div class="slider__elem">
+		    <div class="slider__elem">
 				<div class="slider__img">
 					<img src="img/burgher3.png" alt="" class="brg-img">
 				</div>
@@ -189,7 +195,7 @@
 				</button>
 				</div>
 			</div><!--slider__elem-->
-						<div class="slider__elem">
+			<div class="slider__elem">
 				<div class="slider__img">
 					<img src="img/burgher3.png" alt="" class="brg-img">
 				</div>
@@ -219,7 +225,7 @@
 				</button>
 				</div>
 			</div><!--slider__elem-->
-						<div class="slider__elem">
+			<div class="slider__elem">
 				<div class="slider__img">
 					<img src="img/burgher4.png" alt="" class="brg-img">
 				</div>
@@ -249,23 +255,9 @@
 				</button>
 				</div>
 			</div><!--slider__elem-->
-			</div><!--slider__row-->
 		</div><!--slider-->
-		<div class="burghers__arrow">
-						<div class="burghers__arrow-left" id="left">
-					<a href="#">
-						<img src="img/arrow-scroll_left.png" alt="">
-					</a>
-				</div>
-				<div class="burghers__arrow-right" id="right">
-					<a href="#">
-						<img src="img/arrow-scroll_right.png" alt="">
-					</a>
-				</div>
-				</div>
-		</div><!--slider-menu-->
-	</section>
-<section>
+	</section><!--hero-page-->
+	<section  class="section">
 	<div class="team__page">
 		<div class="team__container">
 			<div class="container__block">
@@ -348,8 +340,8 @@
 			</div>
 		</div>
 	</div><!--team__page-->
-</section>	
-<section>
+	</section>	
+	<section  class="section">
 	<div class="menu__page">
 		<div class="menu__title">
 		Меню
@@ -382,74 +374,68 @@
 				<div class="accordeon-menu__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil incidunt alias optio enim cupiditate consequuntur magnam impedit doloremque. Tempore repellendus architecto ratione quasi id itaque fuga voluptates obcaecati sapiente, pariatur.</div>
 			</a>
 		</li>
-	</ul>
+		</ul>
 	</div><!--accordeon__menu-->
-</div><!--menu__page-->
-</section>
-
-<div class="people-page" id="peoplePage">
+    </div><!--menu__page-->
+	</section>
+	<section  class="section">
+    <div  class="people-page" id="peoplePage">
 		<ul class="people__elements">
 			<li class="people__container"  style="background-image: url(img/people_img1.jpg)">
 				<div class="people__content">
 					<div class="people__name">Константин Спилберг</div>
 					<div class="people__comment" id="pComent">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-					<a href="#" class="more__btn" id="more">
-						<div class="more-btn__txt">Подробнее</div>
-					</a>
-				</div>
+					<button class="more__btn" id="openOverlay">
+						<div class="bText">Подробнее</div></button>
+					</div>
+
 			</li>
 						<li class="people__container"  style="background-image: url(img/people_img2.jpg)">
 				<div class="people__content">
 					<div class="people__name">Константин Спилберг</div>
 					<div class="people__comment" id="pComent">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-					<a href="#" class="more__btn" id="more">
-						<div class="more-btn__txt">Подробнее</div>
-					</a>
+					<button class="more__btn" id="openOverlay">
+						<div class="bText">Подробнее</div></button>
 				</div>
 			</li>
 						<li class="people__container"  style="background-image: url(img/people_img3.jpg)">
 				<div class="people__content">
 					<div class="people__name">Константин Спилберг</div>
 					<div class="people__comment" id="pComent">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-					<a href="#" class="more__btn" id="more">
-						<div class="more-btn__txt">Подробнее</div>
-					</a>
+					<button class="more__btn" id="openOverlay">
+						<div class="bText">Подробнее</div></button>
 				</div>
 			</li>
 						<li class="people__container"  style="background-image: url(img/people_img4.jpg)">
 				<div class="people__content">
 					<div class="people__name">Константин Спилберг</div>
 					<div class="people__comment" id="pComent">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-					<a href="#" class="more__btn" id="more">
-						<div class="more-btn__txt">Подробнее</div>
-					</a>
+					<button class="more__btn" id="openOverlay">
+						<div class="bText">Подробнее</div></button>
 				</div>
 			</li>
 						<li class="people__container"  style="background-image: url(img/people_img5.jpg)">
 				<div class="people__content">
 					<div class="people__name">Константин Спилберг</div>
 					<div class="people__comment" id="pComent">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-					<a href="#" class="more__btn" id="more">
-						<div class="more-btn__txt">Подробнее</div>
-					</a>
+					<button class="more__btn" id="openOverlay">
+						<div class="bText">Подробнее</div></button>
 				</div>
 			</li>
 						<li class="people__container"  style="background-image: url(img/people_img6.jpg)">
 				<div class="people__content">
 					<div class="people__name">Константин Спилберг</div>
 					<div class="people__comment" id="pComent">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-					<a href="#" class="more__btn" id="more">
-						<div class="more-btn__txt">Подробнее</div>
-					</a>
+					<button class="more__btn" id="openOverlay">
+						<div class="bText">Подробнее</div></button>
 				</div>
 			</li>
 						<li class="people__container"  style="background-image: url(img/people_img7.jpg)">
 				<div class="people__content">
 					<div class="people__name">Константин Спилберг</div>
 					<div class="people__comment" id="pComent">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-					<a href="#" class="more__btn" id="more">
-						<div class="more-btn__txt">Подробнее</div>
-					</a>
+					<button class="more__btn" id="openOverlay">
+						<div class="bText">Подробнее</div></button>
 				</div>
 			</li>
 						<li class="people__container"  style="background-image: url(img/people_img8.jpg)">
@@ -457,33 +443,41 @@
 					<div class="people__name">Константин Спилберг</div>
 					<div class="people__comment" id="pComent">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
 
-					<button class="more__btn" id="more">Подробнее</button>
+					<button class="more__btn" id="openOverlay">
+						<div class="bText">Подробнее</div></button>
 				</div>
 			</li>
 		</ul>
-</div><!--people-page-->
-</section>	
-
-<section class="order__section">
+	</div>
+	<section class="order__section  section>
 	<div class="order__container">
 		<div class="order__title">Закажите доставку</div>
 		<div class="form__container">
-			<form class="order__form">
+			<form class="order__form" id="myForm">
 		<div class="form__elem form__elem_first">
 			<div class="form__row">
 				<label for="" class="form__block">
 					<div class="form__block-title">Имя</div>
-					<input type="text" class="form__input">
+					<input type="text" class="form__input" name="name" required>
+					<div class="error"></div>
 				</label>
 				<label for="" class="form__block">
 					<div class="form__block-title">Телефон</div>
-					<input type="text" class="form__input">
+					<input type="text" class="form__input" name="phone" required>
+					<div class="error"></div>
 				</label>
 			</div>
 			<div class="form__row">
 				<label for="" class="form__block">
 					<div class="form__block-title">Улица</div>
 					<input type="text" class="form__input">
+				</label>
+			</div>
+						<div class="form__row">
+				<label for="" class="form__block">
+					<div class="form__block-title">Почта</div>
+					<input type="email" class="form__input" name="to" required>
+					<div class="error"></div>
 				</label>
 			</div>
 			<div class="form__row">
@@ -509,7 +503,8 @@
 			<div class="form__row">
 				<label for="" class="form__block">
 					<div class="form__block-title">Комментарий</div>
-					<textarea class="textarea__elem"></textarea>
+					<textarea class="textarea__elem" name="comment" required></textarea>
+					<div class="error error_comm"></div>
 				</label>
 			</div>
 			<div class="form__row">
@@ -543,7 +538,7 @@
                 </label>
 			</div>
 		</div>
-	<button class="button button_form">Заказать</button>
+	<button class="button button_form" id="send">Заказать</button>
 		<button class="button__clear">Очистить</button>
 	</form>
 	</section>
@@ -581,8 +576,6 @@
 			</div>
 		</div>
 	</section>
-	</div>
-	</div>	
 	</div><!--landing-page-->
 	<div class="mobile-menu" id="mobileMenu">
 		<ul class="mobile-menu__list">
@@ -616,7 +609,23 @@
 			</svg>
 		</a>
 	</div>
+	<div class="send__true" id="trueMessage">
+		<div class="send__container">
+		<div class="send__true-message">Сообщение отправлено</div>
+		<button class="button__true" id="closeBtn">Закрыть</button>
+		</div>
+	</div>
+	<div class="send__false" id="falseMessage">
+		<div class="false__container">
+			<div class="send__false-message">Произошла ошибка</div>
+			<button class="button__false" id="closeFBtn">Закрыть</button>
+		</div>
+	</div>
+	<script src="jquery.js"></script>
+	<script src="js/slick.js"></script>
 	<script src="main.js"></script>
+	<!--<script src="js/.fullpage.js"></script>-->
+</div>
 </body>
 </html>
 <!---->

@@ -5,6 +5,10 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
   background-image: url(../img/order.png);
@@ -58,9 +62,9 @@
   position: relative;
   width: 98%;
   margin-top: 10%;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .order__form {
   -webkit-box-flex: 1;
@@ -70,6 +74,10 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  max-width: 1100px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -312,3 +320,147 @@
   background-image: url(../img/chek.png);
   background-repeat: no-repeat;
   border-radius: 0.125rem; }
+
+.error {
+  color: #f9b43b;
+  font-family: 'Ubuntu';
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5rem; }
+
+.send__true {
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2f3234;
+  opacity: 0.92; }
+
+.send__true-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.send__false-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.send__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  width: 196px;
+  height: 106px;
+  -webkit-box-shadow: 0 0 40px rgba(0, 0, 1, 0.5);
+  box-shadow: 0 0 40px rgba(0, 0, 1, 0.5);
+  background-color: #ffffff;
+  border-radius: 4%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.false__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  width: 196px;
+  height: 106px;
+  -webkit-box-shadow: 0 0 40px rgba(0, 0, 1, 0.5);
+  box-shadow: 0 0 40px rgba(0, 0, 1, 0.5);
+  background-color: #ffffff;
+  border-radius: 4%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.send__true-message {
+  text-align: center;
+  color: #2f3234;
+  font-family: 'Ubuntu';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px; }
+
+.send__false-message {
+  text-align: center;
+  color: #2f3234;
+  font-family: 'Ubuntu';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px; }
+
+.button__true {
+  width: 97px;
+  height: 35px;
+  border-radius: 5%;
+  background-color: #e45028;
+  padding: 0;
+  border: none;
+  cursor: pointer; }
+
+.button__true {
+  color: #ffffff;
+  font-family: 'Ubuntu';
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase; }
+
+.button__false {
+  width: 97px;
+  height: 35px;
+  border-radius: 5%;
+  background-color: #e45028;
+  padding: 0;
+  border: none;
+  cursor: pointer; }
+
+.button__false {
+  color: #ffffff;
+  font-family: 'Ubuntu';
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase; }
+
+.send__false {
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2f3234;
+  opacity: 0.92; }
+
+.send__false-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }

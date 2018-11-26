@@ -37,23 +37,22 @@ $phones: 480px;
   position: relative;
   width: 85%;
   height: 75%;
-  border: solid 1px #bd1701;
   max-width: 1000px;
 }
 
-.slider__row{
-  display: flex;
-  height: 100%;
-  border: solid 1px #adf442;
-}
 .slider__elem{
-  display: flex;
+  display: flex !important; 
+  position: relative;
   min-width: 27%;
+  min-height: -webkit-fill-available !important;
   height: 100%;
   align-items: center;
       @include tablets {
     flex-direction: column;
         min-width: 33%;
+            display: flex !important;
+      min-height: -webkit-fill-available !important;
+    justify-content: space-evenly;
 }
       @include phones {
     min-width: 24%;
@@ -75,15 +74,16 @@ $phones: 480px;
   display: flex;
   width: auto;
   height: 90%;
+  top: 2%;
   position: absolute;
   justify-content: space-between;
-  left: 2%;
   flex-direction: column;
+  z-index: -2;
    @include tablets {
     flex-direction: row;
     width: 90%;
     height: auto;
-    top: 1%;
+    top: 0%;
     left: 5%;
 }
 }
@@ -166,7 +166,6 @@ $phones: 480px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 100%;
   width: 50%;
       @include tablets {
         width: 80%;
@@ -207,6 +206,14 @@ $phones: 480px;
   font-size: 14px;
   font-weight: 300;
   line-height: 23.97px;
+   padding: 20%;
+   margin-left: -20%;
+      @include tablets {  
+    padding: 0;
+    margin-left: 0;
+}
+
+
 }
 .burghers__btn{
   display: flex;
@@ -226,15 +233,15 @@ $phones: 480px;
   cursor: pointer;
   padding: 0;
     border: none;
-    right: 15%;
-    bottom: 11%;
+    bottom: 18%;
+    left: 75%;
    @include tablets {  
-    right: 25%;
-    bottom: 4%;
+    bottom: 10%;;
+    left: 60%;
 }
   @include phones {
-    right: 17%;
-    bottom: 2%;
+    bottom: 8%;
+    left: 70%;
   } 
 }
 
@@ -244,4 +251,19 @@ $phones: 480px;
   justify-content: space-between;
   width: 70%;
     align-items: center;
+}
+.slick-arrow{
+  display: flex;
+}
+.burghers__arrow-right{
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: -3%;
+}
+.burghers__arrow-left{
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: -3%;
 }
