@@ -20,15 +20,21 @@ let menuClose = document.getElementById('mobilemenuClose');
  });
 
  /*$('#fullpage').fullpage({});*/
-
-const openButton = document.querySelector("#openOverlay");
+const overlayContainer = document.querySelector('#accord');
 const successOverlay = openOverlay("<b>Константин Спилберг</b> <br> \
 	Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.");
 
+	accord.addEventListener('click', function(event){
+	 	if(event.target.classList.contains('bText')){
+	 		document.body.appendChild(successOverlay);
+	 	}
+	})
 
-openButton.addEventListener("click", function() {
-  document.body.appendChild(successOverlay);
-});
+
+  
+
+
+
 
 function openOverlay(content) {
   const overlayElement = document.createElement("div");
@@ -69,17 +75,29 @@ const send = document.querySelector('#send');
 		const FormData = {
 			name: myForm.elements.name.value,
 			phone: myForm.elements.phone.value,
-			to: myForm.elements.to.value
+			to: myForm.elements.to.value,
+			comment: myForm.elements.comment.value
 		};
-		console.log(FormData);
+
+
 
 		const xhr = new XMLHttpRequest();
-		xhr.respnseType = 'json';
-		xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
-		xhr.send(JSON.stringify(FormData));
+		xhr.responseType = 'json';
+		xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail/fail');
+        xhr.send(JSON.stringify(FormData));
+
+
+
+
 		xhr.addEventListener('load', () => {
-			console.log(xhr.response);
-		});
+
+			if (xhr.status == 200) {
+         let message = document.getElementById('trueMessage');
+	     message.classList.add('send__true-active');
+
+
+}   
+		})
 	}
 });
      function validateForm(form) {
@@ -92,6 +110,9 @@ const send = document.querySelector('#send');
      		valid = false;
      	}
      	     	if (!validateField(form.elements.to)) {
+     		valid = false;
+     	}
+     	if (!validateField(form.elements.comment)) {
      		valid = false;
      	}
 
@@ -114,10 +135,8 @@ const send = document.querySelector('#send');
 let trueBtn = document.getElementById('trueMessage');
 let closeBtn = document.getElementById('closeBtn');
 
- /*trueBtn.addEventListener('click', function() {
-	let message = document.getElementById('trueMessage');
-	menu.classList.add('send__true-active');
-});*/
+
+
 
   closeBtn.addEventListener('click', function() {
 	let message = document.getElementById('trueMessage');
