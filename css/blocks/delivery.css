@@ -10,6 +10,9 @@
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 100vh;
   background-image: url(../img/order.png);
   background-repeat: no-repeat;
@@ -284,7 +287,8 @@
   cursor: pointer; }
   @media (max-width: 768px) {
     .button__clear {
-      right: 25%; } }
+      right: 28%;
+      bottom: -17%; } }
 
 .checkbox {
   display: none; }

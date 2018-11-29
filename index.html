@@ -6,7 +6,6 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
-	<link rel="stylesheet" href="css/general/fullpage.css">
 	<link rel="stylesheet" href="css/general/sprite.svg">
 	<link rel="stylesheet" href="css/general/fullpage.css">
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
@@ -22,8 +21,8 @@
 					<div class="header">
 						<div class="header__logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
 						<nav class="sidebar">
-							<ul class="sidebar__container">
-							<li class="sidebar__elem sidebar__elem_txt"><a href="#info">О нас</a></li>
+							<ul class="sidebar__container" id="myMeny">
+							<li class="sidebar__elem sidebar__elem_txt"><a href="#home">О нас</a></li>
 							<li class="sidebar__elem"><div class="circle"></div></li>
 							<li class="sidebar__elem sidebar__elem_txt"><a href="#sliderPage">Бургеры</a></li>
 							<li class="sidebar__elem"><div class="circle"></div></li>
@@ -39,7 +38,7 @@
 							</ul>
 						</nav>
 						<div class="button button_header">
-							<a href="#">Заказать</a>
+							<a href="#buy">Заказать</a>
 						</div><!--button-->
 						<div class="mobile__sidebar" id="mobileSidebar">
 							<a href="#"><img src="img/mobile-menu.png" alt=""></a>
@@ -56,7 +55,7 @@
 						</div>
 					</div><!--hero__content-->
 					<div class="hero__arrow"> 
-						<a href="#"><img src="img/arrow-scroll.png" alt="">
+						<a href="#info"><img src="img/arrow-scroll.png" alt="">
 						</a>
 					</div>
 				</div><!--hero-container-->
@@ -64,7 +63,7 @@
 	</section><!--hero-page-->
 	</div>
 	<div class="section" data-anchor="info">
-	<section  class="section">
+	<section>
 		<div class="we-best-page">
 			<div class="we-best__container">
 				<div class="container__txt">Мы лучшие</div>
@@ -103,7 +102,7 @@
 	</section><!--we-best-->
 	</div>
 	<div class="section" data-anchor="sliderPage">
-	<section  class="section">
+	<section>
 		<div class="slider__menu">
 			<div class="slider">
 			<div class="slider__elem">
@@ -133,7 +132,7 @@
 							<span class="price__txt">рублей</span>
 						</div>
 						<button class="burghers__btn">
-					Заказать
+							<a href="#buy">Заказать</a>
 				</button>
 				</div>
 			</div><!--slider__elem-->
@@ -261,7 +260,7 @@
 	</section><!--hero-page-->
 	</div>
 	<div class="section" data-anchor="teamPage">
-	<section  class="section">
+	<section>
 	<div class="team__page">
 		<div class="team__container">
 			<div class="container__block">
@@ -385,7 +384,7 @@
 	</section>
 	</div>
 	<div class="section" data-anchor="commentPage">
-	<section  class="section">
+	<section>
     <div  class="people-page" id="peoplePage">
 		<ul class="people__elements" id="accord">
 			<li class="people__container" style="background-image: url(img/people_img1.jpg)">
@@ -469,7 +468,7 @@
 	</section>
 </div>
 <div class="section" data-anchor="buy">
-	<section class="order__section  section>
+	<section class="order__section">
 	<div class="order__container">
 		<div class="order__title">Закажите доставку</div>
 		<div class="form__container">
@@ -648,7 +647,7 @@
 				<a href="#home"><div class="data__circle"></div></a>	
 			</li>
 			<li data-menuanchor="info" class="data-menu active">
-					<a href="#indo"><div class="data__circle"></div></a>
+					<a href="#info"><div class="data__circle"></div></a>
 				</li>
 				<li data-menuanchor="sliderPage" class="data-menu active">
 						<a href="#sliderPage"><div class="data__circle"></div></a>
@@ -672,11 +671,10 @@
 	</div>
 
 	<script src="jquery.js"></script>
-	<script src="js/fullpage.js"></script>
 	<script src="js/map.js"></script>
 	<script src="js/slick.js"></script>
+	<script src="js/fullpage.js"></script>
 	<script src="main.js"></script>
-	<!--<script src="js/.fullpage.js"></script>-->
 </div>
 </body>
 </html>

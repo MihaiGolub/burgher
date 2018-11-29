@@ -78,6 +78,9 @@ $phones: 480px;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+    @include tablets {
+      margin-left: 2%;
+}
               @include phones {
     justify-content: space-around;
     height: 50%;
@@ -153,16 +156,9 @@ $phones: 480px;
 }
 
 
-.page__indicator{
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 10%;
-  right: 10%;
-}
+
 
 .data__menu .data__circle {
-  position: relative;
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -183,5 +179,9 @@ $phones: 480px;
 
 }
 .data__menu{
- position: unset !important;
+display: none;
+flex-direction: column;
+position: fixed;
+right: 10%;
+top: 10%;
 }

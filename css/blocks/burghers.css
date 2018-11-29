@@ -302,7 +302,7 @@
   left: 75%; }
   @media (max-width: 768px) {
     .burghers__btn {
-      bottom: 10%;
+      bottom: 9%;
       left: 60%; } }
   @media (max-width: 480px) {
     .burghers__btn {

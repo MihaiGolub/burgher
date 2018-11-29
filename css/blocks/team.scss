@@ -71,6 +71,7 @@ $phones: 480px;
 	margin: 0;
 			    @include tablets {
 	text-align: center;
+	justify-content: center;
 }
 }
 
@@ -216,6 +217,9 @@ $phones: 480px;
 	background-image: url(../img/bg-video.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+	@include tablets {
+		justify-content: center;
+	}
 }
 
 .work__page-txt{

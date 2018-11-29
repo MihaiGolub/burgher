@@ -78,7 +78,10 @@
   margin: 0; }
   @media (max-width: 768px) {
     .accordeon__elements {
-      text-align: center; } }
+      text-align: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .team__dscr__block {
   display: -webkit-box;
@@ -274,6 +277,11 @@
   background-image: url(../img/bg-video.png);
   background-repeat: no-repeat;
   background-size: cover; }
+  @media (max-width: 768px) {
+    .work__page {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .work__page-txt {
   display: -webkit-box;

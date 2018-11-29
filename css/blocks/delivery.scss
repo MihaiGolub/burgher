@@ -25,6 +25,7 @@ $phones: 480px;
 	justify-content: center;
 	flex-direction: column;
 	width: 100%;
+	align-items: center;
 	height: 100vh;
 	background-image: url(../img/order.png);
 	background-repeat: no-repeat;
@@ -235,7 +236,8 @@ $phones: 480px;
     border: none;
     cursor: pointer;
 	@include tablets {
-	right: 25%;
+	right: 28%;
+    bottom: -17%;
 }
 }
 .checkbox {

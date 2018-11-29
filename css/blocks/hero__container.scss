@@ -43,7 +43,8 @@ body {
 		justify-content: flex-start;
 	}
 	@include phones {
-	justify-content: space-evenly;
+	justify-content: space-between;
+	margin-top: 5%;
 }
 }
 .img-hero{
@@ -141,6 +142,10 @@ a{
 	}
 	@include phones {
 	position: unset;
+	width: 8.0625rem;
+	height: 3.1875rem;
+	font-size: 1rem;
+	margin-right: 15%;
 }
 }
 .hero__content{
@@ -160,6 +165,9 @@ a{
 }
 .content__txt li{
 	list-style-type: none;
+	@include tablets {
+		text-align: center;
+	}
 }
 .content__img{
 	margin-bottom: 6%;

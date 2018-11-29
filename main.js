@@ -19,7 +19,6 @@ let menuClose = document.getElementById('mobilemenuClose');
 					</a>',
  });
 
- $('#fullpage').fullpage({});
 
 
 const overlayContainer = document.querySelector('#accord');
@@ -153,6 +152,8 @@ let closeBtn = document.getElementById('closeBtn');
 	falseMessage.classList.remove('send__false-active');
 });
 	
+$('#fullpage').fullpage({});
+
 
 
 
