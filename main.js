@@ -19,7 +19,9 @@ let menuClose = document.getElementById('mobilemenuClose');
 					</a>',
  });
 
- /*$('#fullpage').fullpage({});*/
+ $('#fullpage').fullpage({});
+
+
 const overlayContainer = document.querySelector('#accord');
 const successOverlay = openOverlay("<b>Константин Спилберг</b> <br> \
 	Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.");
@@ -150,4 +152,7 @@ let closeBtn = document.getElementById('closeBtn');
 	let falseMessage = document.getElementById('falseMessage');
 	falseMessage.classList.remove('send__false-active');
 });
-    
+	
+
+
+

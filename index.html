@@ -11,35 +11,36 @@
 	<link rel="stylesheet" href="css/general/fullpage.css">
 	<script src="jquery.js"></script>
 	<script src="js/fullpage.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=<b8dd69ed-85e4-41c1-b4e3-bbc7214b176c>&lang=ru_RU" type="text/javascript">
+	</script>
+	<script src="js/map.js"></script>
 	<title>Document</title>
 </head>
 <body>
 <div class="fullpage" id="fullpage">
-	<section class="section">
+	<div class="section" data-anchor="home">
+	<section>
 			<div class="hero-page">
 				<div class="hero__container">
 					<div class="header">
 						<div class="header__logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
 						<nav class="sidebar">
 							<ul class="sidebar__container">
-							<li class="sidebar__elem sidebar__elem_txt"><a href="#">О нас</a></li>
+							<li class="sidebar__elem sidebar__elem_txt"><a href="#info">О нас</a></li>
 							<li class="sidebar__elem"><div class="circle"></div></li>
-							<li class="sidebar__elem sidebar__elem_txt"><a href="#">Бургеры</a></li>
+							<li class="sidebar__elem sidebar__elem_txt"><a href="#sliderPage">Бургеры</a></li>
 							<li class="sidebar__elem"><div class="circle"></div></li>
-							<li class="sidebar__elem sidebar__elem_txt"><a href="#">Команда</a></li>
+							<li class="sidebar__elem sidebar__elem_txt"><a href="#teamPage">Команда</a></li>
 							<li class="sidebar__elem"><div class="circle"></div></li>
-							<li class="sidebar__elem sidebar__elem_txt"><a href="#">Меню</a></li>
+							<li class="sidebar__elem sidebar__elem_txt"><a href="#menuPage">Меню</a></li>
 							<li class="sidebar__elem"><div class="circle"></div></li>
-							<li class="sidebar__elem sidebar__elem_txt"><a href="#">Отзывы</a></li>
+							<li class="sidebar__elem sidebar__elem_txt"><a href="#commentPage">Отзывы</a></li>
 							<li class="sidebar__elem"><div class="circle"></div></li>
-							<li class="sidebar__elem sidebar__elem_txt"><a href="#">Как мы работаем</a></li>
+							<li class="sidebar__elem sidebar__elem_txt"><a href="#work">Как мы работаем</a></li>
 							<li class="sidebar__elem"><div class="circle"></div></li>
-							<li class="sidebar__elem sidebar__elem_txt"><a href="#">Контакты</a></li>
+							<li class="sidebar__elem sidebar__elem_txt"><a href="#location">Контакты</a></li>
 							</ul>
 						</nav>
-
-
-
 						<div class="button button_header">
 							<a href="#">Заказать</a>
 						</div><!--button-->
@@ -64,6 +65,8 @@
 				</div><!--hero-container-->
 			</div><!--hero-page-->
 	</section><!--hero-page-->
+	</div>
+	<div class="section" data-anchor="info">
 	<section  class="section">
 		<div class="we-best-page">
 			<div class="we-best__container">
@@ -101,6 +104,8 @@
 			</div>
 		</div><!--we-best-page-->
 	</section><!--we-best-->
+	</div>
+	<div class="section" data-anchor="sliderPage">
 	<section  class="section">
 		<div class="slider__menu">
 			<div class="slider">
@@ -257,6 +262,8 @@
 			</div><!--slider__elem-->
 		</div><!--slider-->
 	</section><!--hero-page-->
+	</div>
+	<div class="section" data-anchor="teamPage">
 	<section  class="section">
 	<div class="team__page">
 		<div class="team__container">
@@ -339,9 +346,10 @@
 				</div>
 			</div>
 		</div>
-	</div><!--team__page-->
 	</section>	
-	<section  class="section">
+	</div>
+	<div class="section" data-anchor="menuPage">
+	<section>
 	<div class="menu__page">
 		<div class="menu__title">
 		Меню
@@ -378,6 +386,8 @@
 	</div><!--accordeon__menu-->
     </div><!--menu__page-->
 	</section>
+	</div>
+	<div class="section" data-anchor="commentPage">
 	<section  class="section">
     <div  class="people-page" id="peoplePage">
 		<ul class="people__elements" id="accord">
@@ -450,7 +460,18 @@
 		</ul>
 	</div>
 </section>
-
+</div>
+<div class="section" data-anchor="work">
+	<section>
+		<div class="work__page">
+			<div class="work__page-txt">как мы работаем</div>
+			<div class="work__page_video-container">
+				<video poster="img/video-bg.png" controls width="100%" height="100%" src="video/burgher.mp4"></video>
+			</div>
+		</div>
+	</section>
+</div>
+<div class="section" data-anchor="buy">
 	<section class="order__section  section>
 	<div class="order__container">
 		<div class="order__title">Закажите доставку</div>
@@ -544,8 +565,10 @@
 		<button class="button__clear">Очистить</button>
 	</form>
 	</section>
+	</div>
+	<div class="section" data-anchor="location">
 	<section>
-		<div class="map__footer-container">
+		<div class="map__footer-container" id="map">
 			<div class="footer">
 				<div class="footer__content">
 					<div class="footer__contacts-block">
@@ -576,9 +599,8 @@
 				</div>
 			</div>
 			</div>
-		</div>
 	</section>
-	</div><!--landing-page-->
+		</div>
 	<div class="mobile-menu" id="mobileMenu">
 		<ul class="mobile-menu__list">
 			<li class="mobile-menu__elem">
@@ -623,7 +645,38 @@
 			<button class="button__false" id="closeFBtn">Закрыть</button>
 		</div>
 	</div>
+	<div class="page__indicator">
+		<ul id="myMeny" class="data__menu">
+			<li data-menuanchor="home" class="data-menu active">
+				<a href="#home"><div class="data__circle"></div></a>	
+			</li>
+			<li data-menuanchor="info" class="data-menu active">
+					<a href="#indo"><div class="data__circle"></div></a>
+				</li>
+				<li data-menuanchor="sliderPage" class="data-menu active">
+						<a href="#sliderPage"><div class="data__circle"></div></a>
+					</li>
+					<li data-menuanchor="teamPage" class="data-menu active">
+							<a href="#teamPage"><div class="data__circle"></div></a>
+						</li>
+						<li data-menuanchor="menuPage" class="data-menu active">
+								<a href="#menuPage"><div class="data__circle"></div></a>
+							</li>
+							<li data-menuanchor="commentPage" class="data-menu active">
+									<a href="#commentPage"><div class="data__circle"></div></a>
+								</li>
+								<li data-menuanchor="work" class="data-menu active">
+										<a href="#work"><div class="data__circle"></div></a>
+									</li>
+									<li data-menuanchor="location" class="data-menu active">
+											<a href="#location"><div class="data__circle"></div></a>
+										</li>
+		</ul>
+	</div>
+
 	<script src="jquery.js"></script>
+	<script src="js/fullpage.js"></script>
+	<script src="js/map.js"></script>
 	<script src="js/slick.js"></script>
 	<script src="main.js"></script>
 	<!--<script src="js/.fullpage.js"></script>-->
