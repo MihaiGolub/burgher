@@ -157,3 +157,20 @@ $('#fullpage').fullpage({});
 
 
 
+
+$('#black1').on('click', function() {
+    $(acc1Open).toggleClass('active');
+});
+$(document).mouseup(function (e) {
+    var container = $("#black1");
+    if (container.has(e.target).length === 0){
+        $("black1").removeClass( "active" )
+    }
+});
+
+$('#black2').on('click', function() {
+    $(acc2Open).toggleClass('active');
+});
+$('#black3').on('click', function() {
+    $(acc3Open).toggleClass('active');
+});

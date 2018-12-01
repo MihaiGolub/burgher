@@ -68,9 +68,12 @@
 }
 .accordeon-menu__elem:hover {
 	.accordeon-menu__content{
-	max-width: 31.25rem;
 	}
 	 .accordeon-menu__btn-txt{
 		color: #f9b43b;
 	}
+}
+
+.accordeon-menu__content.active{
+	max-width: 31.25rem;
 }

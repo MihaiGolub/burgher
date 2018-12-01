@@ -156,32 +156,42 @@ $phones: 480px;
 }
 
 
+#myMenu{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 7%;
+  right: 7%;
+  height: 11rem;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.nav_elem{
+  display: flex;
+ align-items: center;
+ justify-content: center;
+}
 
-.data__menu .data__circle {
+.nav__link{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background-color: #fff;
 }
 
-.data__menu .active {
-  display: flex;
-  width: 13px;
-  height: 13px;
-  border: solid 1px #fff;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  margin-top: 16px;
-  top: 5%;
-  right: 5%;
 
+.nav_elem .active:before {
+  display: flex;
+  border: solid 1px #fff;
+  width: 200%;
+  height: 200%;
+  border-radius: 50%;
+  content: '';
+  position: absolute;
 }
-.data__menu{
-display: none;
-flex-direction: column;
-position: fixed;
-right: 10%;
-top: 10%;
-}
+

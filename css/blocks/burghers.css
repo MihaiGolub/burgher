@@ -10,7 +10,6 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border: solid 1px #293342;
   background-color: #f9b43b;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#f9b43b), color-stop(48%, #eb8c38), color-stop(74%, #f9b43b), to(#f9b43b));
   background-image: -webkit-linear-gradient(bottom, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
@@ -89,8 +88,7 @@
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  z-index: -2; }
+  flex-direction: column; }
   @media (max-width: 768px) {
     .slider__details {
       -webkit-box-orient: horizontal;
@@ -118,7 +116,8 @@
   font-family: 'Gagalin-Regular';
   font-size: 14px;
   font-weight: 400;
-  line-height: 28.11px; }
+  line-height: 28.11px;
+  position: relative; }
 
 .composition__img {
   display: -webkit-box;
@@ -148,7 +147,10 @@
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s; }
 
 .brg-img {
   width: 31.5625rem;
@@ -342,3 +344,69 @@
   position: absolute;
   top: 50%;
   left: -3%; }
+
+.make__hover {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: none;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  top: -189%;
+  left: 100%;
+  position: absolute;
+  width: 16.875rem;
+  height: 0px;
+  background-color: #ffffff;
+  opacity: 0.9;
+  border-radius: 2%; }
+
+.make__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.make__txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 70%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.make__txt-name {
+  color: #2f3234;
+  font-family: 'Ubuntu';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px; }
+
+.make__txt-price {
+  color: #2f3234;
+  font-family: 'Ubuntu';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px; }
+
+.composition__elem:hover .make__hover {
+  height: 20.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }

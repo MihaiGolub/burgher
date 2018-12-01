@@ -3,11 +3,12 @@ function ready() {
     ymaps.ready(function () {
         var myMap = new ymaps.Map('map', {
                 center: [47.018706, 28.825494],
-                zoom: 9
+                zoom: 9,
             }, {
                 searchControlProvider: 'yandex#search'
+
             }),
-    
+            
             // Создаём макет содержимого.
             MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
                 '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
