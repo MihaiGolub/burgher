@@ -161,12 +161,21 @@ $('#fullpage').fullpage({
 
 
 $('#black1').on('click', function() {
+	$(acc2Open).removeClass("active");
+	$(acc3Open).removeClass("active");
     $(acc1Open).toggleClass('active');
 });
 
 $('#black2').on('click', function() {
+	$(acc1Open).removeClass("active");
+	$(acc3Open).removeClass("active");
     $(acc2Open).toggleClass('active');
 });
 $('#black3').on('click', function() {
+	$(acc1Open).removeClass("active");
+	$(acc2Open).removeClass("active");
     $(acc3Open).toggleClass('active');
 });
+
+
+      
