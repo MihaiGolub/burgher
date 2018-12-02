@@ -2215,13 +2215,13 @@ ul {
   border-radius: 50%;
   background-color: #fff; }
 
-.nav_elem .active:before {
+#myMenu .active:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border: solid 1px #fff;
-  width: 200%;
-  height: 200%;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   content: '';
   position: absolute; }

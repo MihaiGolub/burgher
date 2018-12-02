@@ -152,7 +152,9 @@ let closeBtn = document.getElementById('closeBtn');
 	falseMessage.classList.remove('send__false-active');
 });
 	
-$('#fullpage').fullpage({});
+$('#fullpage').fullpage({
+	menu: '#myMenu',
+});
 
 
 

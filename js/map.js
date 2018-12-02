@@ -54,6 +54,8 @@ function ready() {
         myMap.geoObjects
             .add(myPlacemark)
             .add(myPlacemarkWithContent);
+
+            myMap.behaviors.disable('scrollZoom');
     });
 };
 
